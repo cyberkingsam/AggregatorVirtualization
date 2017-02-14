@@ -1,0 +1,1232 @@
+ffmpeg version 2.4.3-1ubuntu1~trusty6 Copyright (c) 2000-2014 the FFmpeg developers
+  built on Nov 22 2014 17:07:19 with gcc 4.8 (Ubuntu 4.8.2-19ubuntu1)
+  configuration: --prefix=/usr --extra-version='1ubuntu1~trusty6' --build-suffix=-ffmpeg --toolchain=hardened --extra-cflags= --extra-cxxflags= --libdir=/usr/lib/x86_64-linux-gnu --shlibdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --enable-shared --disable-stripping --enable-avresample --enable-avisynth --enable-fontconfig --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-librtmp --enable-libschroedinger --enable-libshine --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-opengl --enable-x11grab --enable-libxvid --enable-libx265 --enable-libdc1394 --enable-libiec61883 --enable-libzvbi --enable-libzmq --enable-frei0r --enable-libx264 --enable-libsoxr --enable-openal --enable-libopencv
+  libavutil      54.  7.100 / 54.  7.100
+  libavcodec     56.  1.100 / 56.  1.100
+  libavformat    56.  4.101 / 56.  4.101
+  libavdevice    56.  0.100 / 56.  0.100
+  libavfilter     5.  1.100 /  5.  1.100
+  libavresample   2.  1.  0 /  2.  1.  0
+  libswscale      3.  0.100 /  3.  0.100
+  libswresample   1.  1.100 /  1.  1.100
+  libpostproc    53.  0.100 / 53.  0.100
+Guessed Channel Layout for  Input Stream #0.1 : mono
+Input #0, rtsp, from 'rtsp://admin:admin@192.168.0.108/11':
+  Metadata:
+    title           : \11
+  Duration: N/A, start: 0.039978, bitrate: 64 kb/s
+    Stream #0:0: Video: h264 (Main), yuv420p, 1280x720, 25 tbr, 90k tbn, 180k tbc
+    Stream #0:1: Audio: pcm_alaw, 8000 Hz, 1 channels, s16, 64 kb/s
+[libx264 @ 0x952920] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX AVX2 FMA3 LZCNT BMI2
+[libx264 @ 0x952920] profile Constrained Baseline, level 3.1
+[libx264 @ 0x952920] 264 - core 142 r2389 956c8d8 - H.264/MPEG-4 AVC codec - Copyleft 2003-2014 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=umh subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=1 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=1 keyint_min=1 scenecut=40 intra_refresh=0 rc=abr mbtree=0 bitrate=2500 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, flv, to 'rtmp://52.187.67.18/live/cafb75a5-4eaa-413c-9e53-8ac11b2f7aae^ced954b6-351a-4926-b389-a322a3bc4166':
+  Metadata:
+    title           : \11
+    encoder         : Lavf56.4.101
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p, 1280x720, q=-1--1, 2500 kb/s, 25 fps, 1k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc56.1.100 libx264
+    Stream #0:1: Audio: mp3 (libmp3lame) ([2][0][0][0] / 0x0002), 44100 Hz, mono, s16p
+    Metadata:
+      encoder         : Lavc56.1.100 libmp3lame
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (pcm_alaw (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+frame=   17 fps=0.0 q=40.0 size=     176kB time=00:00:00.40 bitrate=3608.9kbits/s    [NULL @ 0x906ac0] RTP: missed 29 packets
+[h264 @ 0xa94900] error while decoding MB 72 42, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 217 DC, 217 AC, 217 MV errors in P frame
+frame=   54 fps= 52 q=43.0 size=     776kB time=00:00:02.92 bitrate=2176.1kbits/s    frame=   69 fps= 44 q=40.0 size=     984kB time=00:00:03.46 bitrate=2323.7kbits/s    frame=   80 fps= 39 q=40.0 size=    1150kB time=00:00:03.96 bitrate=2375.5kbits/s    frame=   94 fps= 36 q=41.0 size=    1354kB time=00:00:04.48 bitrate=2471.7kbits/s    frame=  108 fps= 35 q=41.0 size=    1552kB time=00:00:05.03 bitrate=2524.9kbits/s    frame=  119 fps= 33 q=41.0 size=    1705kB time=00:00:05.48 bitrate=2547.3kbits/s    frame=  134 fps= 32 q=41.0 size=    1909kB time=00:00:06.08 bitrate=2571.0kbits/s    frame=  147 fps= 31 q=41.0 size=    2083kB time=00:00:06.60 bitrate=2584.4kbits/s    frame=  161 fps= 31 q=42.0 size=    2270kB time=00:00:07.15 bitrate=2599.0kbits/s    frame=  175 fps= 30 q=42.0 size=    2453kB time=00:00:07.72 bitrate=2601.0kbits/s    frame=  188 fps= 30 q=42.0 size=    2623kB time=00:00:08.14 bitrate=2638.4kbits/s    frame=  200 fps= 29 q=42.0 size=    2779kB time=00:00:08.66 bitrate=2626.7kbits/s    frame=  213 fps= 29 q=42.0 size=    2947kB time=00:00:09.24 bitrate=2612.4kbits/s    frame=  226 fps= 28 q=42.0 size=    3114kB time=00:00:09.71 bitrate=2626.1kbits/s    frame=  241 fps= 29 q=42.0 size=    3305kB time=00:00:10.36 bitrate=2612.1kbits/s    frame=  251 fps= 27 q=42.0 size=    3433kB time=00:00:10.70 bitrate=2627.1kbits/s    frame=  271 fps= 28 q=42.0 size=    3686kB time=00:00:11.56 bitrate=2610.7kbits/s    frame=  284 fps= 28 q=42.0 size=    3850kB time=00:00:12.06 bitrate=2614.3kbits/s    frame=  297 fps= 28 q=42.0 size=    4014kB time=00:00:12.58 bitrate=2612.9kbits/s    frame=  301 fps= 27 q=42.0 size=    4064kB time=00:00:12.71 bitrate=2618.5kbits/s    frame=  324 fps= 28 q=42.0 size=    4356kB time=00:00:13.63 bitrate=2617.8kbits/s    frame=  335 fps= 27 q=42.0 size=    4495kB time=00:00:14.07 bitrate=2616.2kbits/s    frame=  347 fps= 27 q=42.0 size=    4646kB time=00:00:14.28 bitrate=2664.5kbits/s    [NULL @ 0x9109c0] RTP: missed 1 packets
+frame=  363 fps= 27 q=42.0 size=    4846kB time=00:00:15.18 bitrate=2614.5kbits/s    frame=  375 fps= 27 q=42.0 size=    4997kB time=00:00:15.70 bitrate=2606.2kbits/s    frame=  389 fps= 27 q=42.0 size=    5173kB time=00:00:16.23 bitrate=2610.9kbits/s    frame=  401 fps= 27 q=42.0 size=    5322kB time=00:00:16.72 bitrate=2606.6kbits/s    frame=  416 fps= 27 q=42.0 size=    5510kB time=00:00:17.35 bitrate=2601.0kbits/s    frame=  429 fps= 27 q=42.0 size=    5673kB time=00:00:17.87 bitrate=2599.6kbits/s    frame=  442 fps= 27 q=42.0 size=    5835kB time=00:00:18.34 bitrate=2605.4kbits/s    frame=  451 fps= 26 q=42.0 size=    5947kB time=00:00:18.71 bitrate=2603.4kbits/s    frame=  470 fps= 27 q=42.0 size=    6184kB time=00:00:19.47 bitrate=2602.0kbits/s    frame=  483 fps= 27 q=42.0 size=    6346kB time=00:00:19.99 bitrate=2600.1kbits/s    frame=  495 fps= 27 q=42.0 size=    6495kB time=00:00:20.51 bitrate=2593.8kbits/s    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra mode at 0 21
+[h264 @ 0xa92f80] error while decoding MB 0 21, bytestream 31141
+[h264 @ 0xa92f80] concealing 1969 DC, 1969 AC, 1969 MV errors in I frame
+frame=  508 fps= 27 q=41.0 size=    6657kB time=00:00:21.03 bitrate=2592.4kbits/s    frame=  521 fps= 27 q=42.0 size=    6815kB time=00:00:21.50 bitrate=2595.8kbits/s    frame=  527 fps= 26 q=42.0 size=    6891kB time=00:00:21.74 bitrate=2596.3kbits/s    frame=  545 fps= 26 q=42.0 size=    7116kB time=00:00:22.47 bitrate=2593.9kbits/s    frame=  560 fps= 26 q=42.0 size=    7303kB time=00:00:23.07 bitrate=2592.7kbits/s    frame=  573 fps= 26 q=42.0 size=    7465kB time=00:00:23.59 bitrate=2591.5kbits/s    frame=  586 fps= 26 q=42.0 size=    7626kB time=00:00:24.12 bitrate=2590.2kbits/s    frame=  599 fps= 26 q=42.0 size=    7788kB time=00:00:24.64 bitrate=2589.1kbits/s    frame=  611 fps= 26 q=42.0 size=    7937kB time=00:00:25.11 bitrate=2589.1kbits/s    frame=  625 fps= 26 q=42.0 size=    8110kB time=00:00:25.68 bitrate=2586.5kbits/s    frame=  638 fps= 26 q=42.0 size=    8270kB time=00:00:26.23 bitrate=2582.4kbits/s    frame=  650 fps= 26 q=42.0 size=    8419kB time=00:00:26.70 bitrate=2582.6kbits/s    frame=  664 fps= 26 q=42.0 size=    8593kB time=00:00:27.22 bitrate=2585.4kbits/s    frame=  676 fps= 26 q=42.0 size=    8743kB time=00:00:27.72 bitrate=2583.3kbits/s    frame=  692 fps= 26 q=42.0 size=    8942kB time=00:00:28.35 bitrate=2583.6kbits/s    frame=  705 fps= 26 q=42.0 size=    9103kB time=00:00:28.87 bitrate=2582.6kbits/s    frame=  718 fps= 26 q=42.0 size=    9265kB time=00:00:29.39 bitrate=2581.9kbits/s    frame=  731 fps= 26 q=42.0 size=    9427kB time=00:00:29.91 bitrate=2581.2kbits/s    frame=  740 fps= 26 q=42.0 size=    9539kB time=00:00:30.28 bitrate=2580.4kbits/s    frame=  756 fps= 26 q=42.0 size=    9740kB time=00:00:30.91 bitrate=2581.2kbits/s    frame=  769 fps= 26 q=42.0 size=    9902kB time=00:00:31.43 bitrate=2580.5kbits/s    frame=  781 fps= 26 q=42.0 size=   10051kB time=00:00:31.90 bitrate=2580.7kbits/s    frame=  794 fps= 26 q=42.0 size=   10212kB time=00:00:32.42 bitrate=2580.0kbits/s    frame=  807 fps= 26 q=42.0 size=   10374kB time=00:00:32.94 bitrate=2579.2kbits/s    frame=  821 fps= 26 q=42.0 size=   10549kB time=00:00:33.52 bitrate=2577.8kbits/s    frame=  830 fps= 26 q=42.0 size=   10662kB time=00:00:33.83 bitrate=2581.2kbits/s    frame=  849 fps= 26 q=42.0 size=   10901kB time=00:00:34.64 bitrate=2577.4kbits/s    frame=  861 fps= 26 q=42.0 size=   11051kB time=00:00:35.11 bitrate=2577.9kbits/s    frame=  871 fps= 26 q=42.0 size=   11175kB time=00:00:35.48 bitrate=2580.0kbits/s    frame=  890 fps= 26 q=42.0 size=   11409kB time=00:00:36.26 bitrate=2577.1kbits/s    frame=  901 fps= 26 q=42.0 size=   11545kB time=00:00:36.71 bitrate=2576.3kbits/s    frame=  916 fps= 26 q=42.0 size=   11730kB time=00:00:37.31 bitrate=2575.4kbits/s    frame=  927 fps= 26 q=42.0 size=   11866kB time=00:00:37.70 bitrate=2578.0kbits/s    frame=  943 fps= 26 q=42.0 size=   12063kB time=00:00:38.38 bitrate=2574.6kbits/s    frame=  954 fps= 26 q=42.0 size=   12198kB time=00:00:38.82 bitrate=2573.6kbits/s    frame=  969 fps= 26 q=42.0 size=   12381kB time=00:00:39.42 bitrate=2572.6kbits/s    frame=  982 fps= 26 q=42.0 size=   12543kB time=00:00:39.95 bitrate=2571.9kbits/s    frame=  995 fps= 26 q=42.0 size=   12703kB time=00:00:40.47 bitrate=2571.2kbits/s    frame= 1007 fps= 26 q=42.0 size=   12852kB time=00:00:40.94 bitrate=2571.5kbits/s    frame= 1020 fps= 26 q=42.0 size=   13013kB time=00:00:41.46 bitrate=2570.9kbits/s    frame= 1033 fps= 26 q=42.0 size=   13173kB time=00:00:41.98 bitrate=2570.2kbits/s    frame= 1046 fps= 26 q=42.0 size=   13333kB time=00:00:42.51 bitrate=2569.4kbits/s    frame= 1059 fps= 26 q=42.0 size=   13493kB time=00:00:43.03 bitrate=2568.6kbits/s    frame= 1072 fps= 26 q=42.0 size=   13654kB time=00:00:43.55 bitrate=2568.0kbits/s    frame= 1085 fps= 26 q=42.0 size=   13814kB time=00:00:44.07 bitrate=2567.4kbits/s    frame= 1098 fps= 26 q=42.0 size=   13974kB time=00:00:44.59 bitrate=2566.8kbits/s    frame= 1111 fps= 26 q=42.0 size=   14135kB time=00:00:45.12 bitrate=2566.3kbits/s    frame= 1123 fps= 26 q=42.0 size=   14285kB time=00:00:45.59 bitrate=2566.6kbits/s    frame= 1137 fps= 26 q=42.0 size=   14459kB time=00:00:46.16 bitrate=2565.7kbits/s    frame= 1150 fps= 26 q=42.0 size=   14622kB time=00:00:46.71 bitrate=2564.1kbits/s    frame= 1164 fps= 26 q=42.0 size=   14796kB time=00:00:47.23 bitrate=2565.9kbits/s    frame= 1177 fps= 26 q=42.0 size=   14958kB time=00:00:47.68 bitrate=2569.8kbits/s    frame= 1194 fps= 26 q=42.0 size=   15169kB time=00:00:48.43 bitrate=2565.5kbits/s    frame= 1202 fps= 26 q=42.0 size=   15269kB time=00:00:48.67 bitrate=2569.9kbits/s    frame= 1215 fps= 26 q=42.0 size=   15431kB time=00:00:48.98 bitrate=2580.5kbits/s    frame= 1224 fps= 25 q=42.0 size=   15457kB time=00:00:49.28 bitrate=2569.4kbits/s    frame= 1241 fps= 25 q=42.0 size=   15457kB time=00:00:49.96 bitrate=2534.4kbits/s    frame= 1260 fps= 26 q=42.0 size=   15993kB time=00:00:50.79 bitrate=2579.5kbits/s    frame= 1273 fps= 26 q=42.0 size=   16155kB time=00:00:51.60 bitrate=2564.7kbits/s    frame= 1282 fps= 26 q=42.0 size=   16267kB time=00:00:51.96 bitrate=2564.4kbits/s    frame= 1300 fps= 26 q=42.0 size=   16491kB time=00:00:52.67 bitrate=2564.9kbits/s    frame= 1313 fps= 26 q=42.0 size=   16654kB time=00:00:53.11 bitrate=2568.5kbits/s    frame= 1329 fps= 26 q=42.0 size=   16854kB time=00:00:53.84 bitrate=2564.0kbits/s    frame= 1342 fps= 26 q=42.0 size=   17016kB time=00:00:54.34 bitrate=2565.1kbits/s    frame= 1352 fps= 25 q=42.0 size=   17141kB time=00:00:54.52 bitrate=2575.3kbits/s    frame= 1371 fps= 26 q=42.0 size=   17254kB time=00:00:55.16 bitrate=2562.5kbits/s    frame= 1379 fps= 25 q=42.0 size=   17479kB time=00:00:55.54 bitrate=2577.9kbits/s    frame= 1395 fps= 25 q=42.0 size=   17492kB time=00:00:56.12 bitrate=2553.4kbits/s    frame= 1410 fps= 26 q=42.0 size=   17868kB time=00:00:57.08 bitrate=2564.1kbits/s    frame= 1421 fps= 25 q=42.0 size=   18006kB time=00:00:57.26 bitrate=2575.6kbits/s    frame= 1435 fps= 25 q=42.0 size=   18181kB time=00:00:58.02 bitrate=2566.7kbits/s    frame= 1450 fps= 25 q=42.0 size=   18281kB time=00:00:58.32 bitrate=2567.9kbits/s    frame= 1461 fps= 25 q=42.0 size=   18281kB time=00:00:58.76 bitrate=2548.6kbits/s    [NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 1473 fps= 25 q=42.0 size=   18281kB time=00:00:59.24 bitrate=2528.0kbits/s    frame= 1490 fps= 25 q=42.0 size=   18281kB time=00:00:59.92 bitrate=2499.3kbits/s    frame= 1501 fps= 25 q=42.0 size=   18281kB time=00:01:00.36 bitrate=2481.1kbits/s    frame= 1513 fps= 25 q=42.0 size=   18281kB time=00:01:00.84 bitrate=2461.5kbits/s    frame= 1527 fps= 25 q=42.0 size=   18281kB time=00:01:01.40 bitrate=2439.0kbits/s    frame= 1534 fps= 25 q=42.0 size=   18281kB time=00:01:01.68 bitrate=2428.0kbits/s    frame= 1543 fps= 25 q=42.0 size=   18281kB time=00:01:02.04 bitrate=2413.9kbits/s    frame= 1554 fps= 25 q=42.0 size=   18281kB time=00:01:02.48 bitrate=2396.9kbits/s    frame= 1566 fps= 25 q=42.0 size=   18281kB time=00:01:02.96 bitrate=2378.6kbits/s    [NULL @ 0x906ac0] RTP: missed 8 packets
+    Last message repeated 1 times
+[NULL @ 0x906ac0] RTP: missed 41 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 1576 fps= 25 q=41.0 size=   18281kB time=00:01:03.36 bitrate=2363.6kbits/s    frame= 1584 fps= 25 q=41.0 size=   18746kB time=00:01:04.80 bitrate=2369.8kbits/s    frame= 1598 fps= 25 q=41.0 size=   18746kB time=00:01:05.36 bitrate=2349.5kbits/s    frame= 1611 fps= 25 q=41.0 size=   18746kB time=00:01:05.88 bitrate=2331.0kbits/s    frame= 1624 fps= 25 q=41.0 size=   18746kB time=00:01:06.40 bitrate=2312.7kbits/s    frame= 1639 fps= 25 q=41.0 size=   18746kB time=00:01:07.00 bitrate=2292.0kbits/s    frame= 1647 fps= 25 q=41.0 size=   18746kB time=00:01:07.32 bitrate=2281.1kbits/s    frame= 1661 fps= 25 q=41.0 size=   18746kB time=00:01:07.88 bitrate=2262.3kbits/s    frame= 1677 fps= 25 q=41.0 size=   18746kB time=00:01:08.52 bitrate=2241.2kbits/s    frame= 1691 fps= 25 q=41.0 size=   18746kB time=00:01:09.08 bitrate=2223.0kbits/s dup=0 drop=1    frame= 1703 fps= 25 q=41.0 size=   18746kB time=00:01:09.56 bitrate=2207.7kbits/s dup=0 drop=1    frame= 1715 fps= 25 q=41.0 size=   18892kB time=00:01:10.04 bitrate=2209.6kbits/s dup=0 drop=1    frame= 1725 fps= 24 q=41.0 size=   19014kB time=00:01:10.44 bitrate=2211.3kbits/s dup=0 drop=1    frame= 1732 fps= 24 q=41.0 size=   19099kB time=00:01:10.72 bitrate=2212.4kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 25 packets
+frame= 1742 fps= 24 q=41.0 size=   19221kB time=00:01:11.12 bitrate=2214.0kbits/s dup=0 drop=1    [h264 @ 0xa940c0] error while decoding MB 33 24, bytestream -38
+[h264 @ 0xa940c0] concealing 1696 DC, 1696 AC, 1696 MV errors in I frame
+frame= 1749 fps= 24 q=41.0 size=   19306kB time=00:01:11.40 bitrate=2215.1kbits/s dup=0 drop=1    frame= 1755 fps= 24 q=42.0 size=   19379kB time=00:01:11.64 bitrate=2216.0kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa95980] error while decoding MB 74 38, bytestream -8
+[h264 @ 0xa95980] concealing 535 DC, 535 AC, 535 MV errors in I frame
+frame= 1768 fps= 24 q=39.0 size=   19549kB time=00:01:12.20 bitrate=2218.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 3 packets
+[NULL @ 0x906ac0] RTP: missed 34 packets
+[h264 @ 0xa94900] error while decoding MB 49 27, bytestream -32
+[h264 @ 0xa94900] concealing 1440 DC, 1440 AC, 1440 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 47 packets
+frame= 1784 fps= 24 q=39.0 size=   19745kB time=00:01:12.84 bitrate=2220.6kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa92f80] error while decoding MB 5 44, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 124 DC, 124 AC, 124 MV errors in P frame
+frame= 1793 fps= 24 q=40.0 size=   19966kB time=00:01:13.56 bitrate=2223.5kbits/s dup=0 drop=1    frame= 1801 fps= 24 q=38.0 size=   20006kB time=00:01:14.00 bitrate=2214.7kbits/s dup=0 drop=1    frame= 1817 fps= 24 q=39.0 size=   20293kB time=00:01:15.68 bitrate=2196.6kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa940c0] error while decoding MB 45 22, bytestream -14
+[h264 @ 0xa940c0] concealing 1844 DC, 1844 AC, 1844 MV errors in I frame
+frame= 1829 fps= 24 q=40.0 size=   20448kB time=00:01:16.16 bitrate=2199.5kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 1836 fps= 24 q=40.0 size=   20539kB time=00:01:16.44 bitrate=2201.1kbits/s dup=0 drop=1    frame= 1844 fps= 24 q=40.0 size=   20642kB time=00:01:16.76 bitrate=2203.0kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 3 packets
+frame= 1849 fps= 23 q=39.0 size=   20707kB time=00:01:16.96 bitrate=2204.1kbits/s dup=0 drop=1    frame= 1855 fps= 23 q=39.0 size=   20862kB time=00:01:17.44 bitrate=2206.8kbits/s dup=0 drop=1    frame= 1860 fps= 23 q=39.0 size=   20926kB time=00:01:17.64 bitrate=2208.0kbits/s dup=0 drop=1    frame= 1864 fps= 23 q=40.0 size=   20978kB time=00:01:17.80 bitrate=2208.8kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 46 packets
+[h264 @ 0xa94900] error while decoding MB 69 18, bytestream -9
+[h264 @ 0xa94900] concealing 2140 DC, 2140 AC, 2140 MV errors in I frame
+frame= 1870 fps= 23 q=40.0 size=   21055kB time=00:01:18.04 bitrate=2210.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 8 packets
+[NULL @ 0x906ac0] RTP: missed 39 packets
+[h264 @ 0xa94900] error while decoding MB 76 2, bytestream -33
+[h264 @ 0xa94900] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+frame= 1879 fps= 23 q=40.0 size=   21209kB time=00:01:18.52 bitrate=2212.8kbits/s dup=0 drop=1    frame= 1882 fps= 23 q=40.0 size=   21248kB time=00:01:18.64 bitrate=2213.4kbits/s dup=0 drop=1    frame= 1888 fps= 23 q=36.0 size=   21325kB time=00:01:18.88 bitrate=2214.7kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 27 packets
+[h264 @ 0xa95980] error while decoding MB 71 34, bytestream -22
+[h264 @ 0xa95980] concealing 858 DC, 858 AC, 858 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 1896 fps= 23 q=33.0 size=   21684kB time=00:01:20.00 bitrate=2220.4kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 44 packets
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+frame= 1908 fps= 23 q=34.0 size=   21877kB time=00:01:20.60 bitrate=2223.6kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 37 packets
+[h264 @ 0xa92f80] error while decoding MB 24 21, bytestream -30
+[h264 @ 0xa92f80] concealing 1945 DC, 1945 AC, 1945 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+frame= 1917 fps= 23 q=37.0 size=   21993kB time=00:01:20.96 bitrate=2225.4kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 44 packets
+frame= 1924 fps= 23 q=37.0 size=   22422kB time=00:01:22.48 bitrate=2226.9kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 1929 fps= 22 q=35.0 size=   22490kB time=00:01:22.80 bitrate=2225.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 33 packets
+[NULL @ 0x906ac0] RTP: missed 8 packets
+frame= 1936 fps= 22 q=32.0 size=   22575kB time=00:01:23.48 bitrate=2215.3kbits/s dup=0 drop=1    frame= 1939 fps= 22 q=34.0 size=   22637kB time=00:01:23.68 bitrate=2216.1kbits/s dup=0 drop=1    frame= 1949 fps= 22 q=32.0 size=   22709kB time=00:01:24.56 bitrate=2200.0kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 19 packets
+[h264 @ 0xa940c0] error while decoding MB 57 37, bytestream -20
+[h264 @ 0xa940c0] concealing 632 DC, 632 AC, 632 MV errors in I frame
+frame= 1958 fps= 22 q=35.0 size=   22793kB time=00:01:25.32 bitrate=2188.5kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 44 packets
+[h264 @ 0xa940c0] error while decoding MB 37 16, bytestream -6
+[h264 @ 0xa940c0] concealing 2332 DC, 2332 AC, 2332 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[NULL @ 0x906ac0] RTP: missed 7 packets
+frame= 1970 fps= 22 q=33.0 size=   22897kB time=00:01:25.80 bitrate=2186.2kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 58 packets
+[h264 @ 0xa94900] error while decoding MB 38 19, bytestream -30
+[h264 @ 0xa94900] concealing 2091 DC, 2091 AC, 2091 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 15 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95140] error while decoding MB 5 41, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 364 DC, 364 AC, 364 MV errors in P frame
+[h264 @ 0xa95980] error while decoding MB 34 41, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 335 DC, 335 AC, 335 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 27 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra mode at 0 4
+[h264 @ 0xa92f80] error while decoding MB 0 4, bytestream 1595
+[h264 @ 0xa92f80] concealing 3329 DC, 3329 AC, 3329 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[NULL @ 0x906ac0] RTP: missed 23 packets
+frame= 1977 fps= 22 q=36.0 size=   23121kB time=00:01:26.48 bitrate=2190.2kbits/s dup=0 drop=1    [h264 @ 0xa940c0] concealing 2010 DC, 2010 AC, 2010 MV errors in I frame
+frame= 1983 fps= 22 q=36.0 size=   23206kB time=00:01:26.72 bitrate=2192.2kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 15 packets
+[h264 @ 0xa940c0] error while decoding MB 76 34, bytestream -52
+[h264 @ 0xa940c0] concealing 853 DC, 853 AC, 853 MV errors in I frame
+frame= 1989 fps= 22 q=35.0 size=   23290kB time=00:01:26.96 bitrate=2194.0kbits/s dup=0 drop=1    frame= 1995 fps= 22 q=27.0 size=   23516kB time=00:01:27.96 bitrate=2190.1kbits/s dup=0 drop=1    frame= 2001 fps= 22 q=31.0 size=   23875kB time=00:01:29.96 bitrate=2174.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 36 packets
+[h264 @ 0xa95140] error while decoding MB 28 24, bytestream -12
+[h264 @ 0xa95140] concealing 1701 DC, 1701 AC, 1701 MV errors in I frame
+frame= 2010 fps= 22 q=34.0 size=   23907kB time=00:01:30.32 bitrate=2168.3kbits/s dup=0 drop=1    frame= 2017 fps= 21 q=34.0 size=   23963kB time=00:01:30.72 bitrate=2163.9kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 41 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 2023 fps= 21 q=34.0 size=   23999kB time=00:01:30.96 bitrate=2161.4kbits/s dup=0 drop=1    frame= 2029 fps= 21 q=32.0 size=   24025kB time=00:01:31.20 bitrate=2158.0kbits/s dup=0 drop=1    frame= 2032 fps= 21 q=32.0 size=   24025kB time=00:01:31.32 bitrate=2155.2kbits/s dup=0 drop=1    frame= 2038 fps= 21 q=30.0 size=   24067kB time=00:01:32.08 bitrate=2141.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa95140] error while decoding MB 73 31, bytestream -8
+[h264 @ 0xa95140] concealing 1096 DC, 1096 AC, 1096 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 12 packets
+frame= 2044 fps= 21 q=32.0 size=   24143kB time=00:01:32.56 bitrate=2136.7kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 38 packets
+[h264 @ 0xa92f80] error while decoding MB 76 2, bytestream -14
+[h264 @ 0xa92f80] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 2055 fps= 21 q=32.0 size=   24267kB time=00:01:33.04 bitrate=2136.7kbits/s dup=0 drop=1    frame= 2060 fps= 21 q=33.0 size=   24267kB time=00:01:33.24 bitrate=2132.1kbits/s dup=0 drop=1    frame= 2064 fps= 21 q=30.0 size=   24319kB time=00:01:33.76 bitrate=2124.8kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 49 packets
+[h264 @ 0xa940c0] error while decoding MB 24 21, bytestream -50
+[h264 @ 0xa940c0] concealing 1945 DC, 1945 AC, 1945 MV errors in I frame
+frame= 2068 fps= 20 q=27.0 size=   24341kB time=00:01:34.28 bitrate=2115.0kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 109 packets
+[h264 @ 0xa95980] error while decoding MB 24 21, bytestream -44
+[h264 @ 0xa95980] concealing 1945 DC, 1945 AC, 1945 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 43 packets
+[NULL @ 0x906ac0] RTP: missed 5 packets
+[NULL @ 0x906ac0] RTP: missed 29 packets
+frame= 2080 fps= 20 q=29.0 size=   24482kB time=00:01:34.92 bitrate=2112.9kbits/s dup=0 drop=1    frame= 2086 fps= 20 q=29.0 size=   24482kB time=00:01:35.16 bitrate=2107.6kbits/s dup=0 drop=1    frame= 2092 fps= 20 q=29.0 size=   24739kB time=00:01:36.28 bitrate=2104.9kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 49 packets
+frame= 2098 fps= 20 q=31.0 size=   25082kB time=00:01:38.88 bitrate=2078.0kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 34 packets
+[NULL @ 0x906ac0] RTP: missed 39 packets
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 425 DC, 425 AC, 425 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 10 packets
+[NULL @ 0x906ac0] RTP: missed 53 packets
+[h264 @ 0xa92f80] error while decoding MB 14 44, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 115 DC, 115 AC, 115 MV errors in P frame
+frame= 2104 fps= 20 q=31.0 size=   25114kB time=00:01:39.48 bitrate=2068.1kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 2107 fps= 20 q=31.0 size=   25114kB time=00:01:39.60 bitrate=2065.6kbits/s dup=0 drop=1    frame= 2113 fps= 20 q=31.0 size=   25114kB time=00:01:39.84 bitrate=2060.6kbits/s dup=0 drop=1    frame= 2117 fps= 20 q=32.0 size=   25294kB time=00:01:40.56 bitrate=2060.5kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 12 packets
+[NULL @ 0x906ac0] RTP: missed 27 packets
+frame= 2123 fps= 20 q=30.0 size=   25403kB time=00:01:40.80 bitrate=2064.5kbits/s dup=0 drop=1    frame= 2125 fps= 20 q=29.0 size=   25705kB time=00:01:42.04 bitrate=2063.7kbits/s dup=0 drop=1    frame= 2129 fps= 20 q=32.0 size=   25850kB time=00:01:42.72 bitrate=2061.6kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 36 packets
+[h264 @ 0xa95140] error while decoding MB 29 20, bytestream -36
+[h264 @ 0xa95140] concealing 2020 DC, 2020 AC, 2020 MV errors in I frame
+frame= 2132 fps= 19 q=32.0 size=   25934kB time=00:01:42.96 bitrate=2063.5kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 3 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 2135 fps= 19 q=31.0 size=   25977kB time=00:01:43.08 bitrate=2064.5kbits/s dup=0 drop=1    [NULL @ 0x906ac0] RTP: missed 26 packets
+[NULL @ 0x906ac0] RTP: missed 31 packets
+frame= 2138 fps= 19 q=32.0 size=   26019kB time=00:01:43.20 bitrate=2065.4kbits/s dup=0 drop=1    frame= 2141 fps= 19 q=32.0 size=   26118kB time=00:01:43.80 bitrate=2061.2kbits/s dup=0 drop=2    frame= 2144 fps= 19 q=32.0 size=   26171kB time=00:01:43.92 bitrate=2063.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 47 packets
+frame= 2147 fps= 19 q=32.0 size=   26171kB time=00:01:44.04 bitrate=2060.7kbits/s dup=0 drop=2    frame= 2150 fps= 19 q=30.0 size=   26171kB time=00:01:44.16 bitrate=2058.3kbits/s dup=0 drop=2    frame= 2154 fps= 19 q=29.0 size=   26189kB time=00:01:44.32 bitrate=2056.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 52 packets
+frame= 2159 fps= 19 q=30.0 size=   26374kB time=00:01:45.76 bitrate=2042.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 32 44, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 97 DC, 97 AC, 97 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 39 packets
+[h264 @ 0xa92f80] error while decoding MB 36 43, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 173 DC, 173 AC, 173 MV errors in P frame
+frame= 2165 fps= 19 q=29.0 size=   26374kB time=00:01:46.00 bitrate=2038.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa94900] error while decoding MB 3 37, bytestream -14
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 686 DC, 686 AC, 686 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 55 packets
+frame= 2171 fps= 19 q=30.0 size=   26412kB time=00:01:46.72 bitrate=2027.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 53 packets
+[h264 @ 0xa940c0] error while decoding MB 0 30, bytestream -30
+[h264 @ 0xa940c0] concealing 1249 DC, 1249 AC, 1249 MV errors in I frame
+[h264 @ 0xa94900] error while decoding MB 44 40, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 405 DC, 405 AC, 405 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95140] error while decoding MB 20 38, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 589 DC, 589 AC, 589 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95980] error while decoding MB 43 42, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 246 DC, 246 AC, 246 MV errors in P frame
+[h264 @ 0xa92f80] error while decoding MB 17 44, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 112 DC, 112 AC, 112 MV errors in P frame
+frame= 2177 fps= 18 q=30.0 size=   26412kB time=00:01:46.96 bitrate=2022.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 96 packets
+[h264 @ 0xa95140] error while decoding MB 28 20, bytestream -14
+[h264 @ 0xa95140] concealing 2021 DC, 2021 AC, 2021 MV errors in I frame
+frame= 2183 fps= 18 q=30.0 size=   26412kB time=00:01:47.20 bitrate=2018.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 18 packets
+frame= 2186 fps= 18 q=29.0 size=   26412kB time=00:01:47.92 bitrate=2004.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 58 packets
+[h264 @ 0xa94900] error while decoding MB 43 41, bytestream -8
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 326 DC, 326 AC, 326 MV errors in P frame
+frame= 2191 fps= 18 q=28.0 size=   26431kB time=00:01:48.28 bitrate=1999.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 127 packets
+[NULL @ 0x906ac0] RTP: missed 8 packets
+frame= 2194 fps= 18 q=26.0 size=   26431kB time=00:01:48.56 bitrate=1994.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 2196 fps= 18 q=28.0 size=   26518kB time=00:01:49.20 bitrate=1989.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 71 packets
+frame= 2198 fps= 18 q=32.0 size=   26735kB time=00:01:50.20 bitrate=1987.4kbits/s dup=0 drop=2    frame= 2200 fps= 18 q=32.0 size=   26845kB time=00:01:50.84 bitrate=1984.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 106 packets
+[h264 @ 0xa940c0] error while decoding MB 8 22, bytestream -6
+[h264 @ 0xa940c0] concealing 1881 DC, 1881 AC, 1881 MV errors in I frame
+frame= 2204 fps= 18 q=30.0 size=   26845kB time=00:01:51.12 bitrate=1979.1kbits/s dup=0 drop=2    frame= 2206 fps= 18 q=26.0 size=   26845kB time=00:01:51.20 bitrate=1977.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 50 packets
+frame= 2209 fps= 18 q=29.0 size=   26845kB time=00:01:51.32 bitrate=1975.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 54 packets
+[h264 @ 0xa95980] error while decoding MB 33 32, bytestream -20
+[h264 @ 0xa95980] concealing 1056 DC, 1056 AC, 1056 MV errors in I frame
+frame= 2213 fps= 18 q=30.0 size=   27114kB time=00:01:53.24 bitrate=1961.5kbits/s dup=0 drop=2    frame= 2218 fps= 18 q=25.0 size=   27219kB time=00:01:53.96 bitrate=1956.7kbits/s dup=0 drop=2    frame= 2220 fps= 18 q=29.0 size=   27458kB time=00:01:55.80 bitrate=1942.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 50 packets
+[h264 @ 0xa95140] error while decoding MB 4 43, bytestream -12
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 205 DC, 205 AC, 205 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 2224 fps= 18 q=29.0 size=   27752kB time=00:01:57.16 bitrate=1940.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 2226 fps= 17 q=30.0 size=   27779kB time=00:01:57.24 bitrate=1941.0kbits/s dup=0 drop=2    frame= 2231 fps= 17 q=26.0 size=   27979kB time=00:01:59.12 bitrate=1924.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 182 packets
+[h264 @ 0xa94900] error while decoding MB 20 43, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 189 DC, 189 AC, 189 MV errors in P frame
+frame= 2234 fps= 17 q=31.0 size=   27999kB time=00:01:59.24 bitrate=1923.6kbits/s dup=0 drop=2    frame= 2237 fps= 17 q=31.0 size=   28093kB time=00:02:00.68 bitrate=1907.0kbits/s dup=0 drop=2    frame= 2242 fps= 17 q=31.0 size=   28119kB time=00:02:00.88 bitrate=1905.6kbits/s dup=0 drop=2    frame= 2243 fps= 17 q=31.0 size=   28119kB time=00:02:00.92 bitrate=1905.0kbits/s dup=0 drop=2    frame= 2247 fps= 17 q=30.0 size=   28166kB time=00:02:01.08 bitrate=1905.7kbits/s dup=0 drop=2    frame= 2250 fps= 17 q=31.0 size=   28295kB time=00:02:01.64 bitrate=1905.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 117 packets
+frame= 2253 fps= 17 q=29.0 size=   28295kB time=00:02:01.96 bitrate=1900.6kbits/s dup=0 drop=2    frame= 2257 fps= 17 q=31.0 size=   28295kB time=00:02:02.12 bitrate=1898.1kbits/s dup=0 drop=2    frame= 2259 fps= 17 q=31.0 size=   28444kB time=00:02:04.36 bitrate=1873.7kbits/s dup=0 drop=2    frame= 2262 fps= 17 q=31.0 size=   28444kB time=00:02:04.48 bitrate=1871.9kbits/s dup=0 drop=2    frame= 2265 fps= 17 q=31.0 size=   28444kB time=00:02:04.60 bitrate=1870.1kbits/s dup=0 drop=2    frame= 2270 fps= 17 q=31.0 size=   28444kB time=00:02:04.80 bitrate=1867.1kbits/s dup=0 drop=2    frame= 2271 fps= 16 q=31.0 size=   28444kB time=00:02:04.84 bitrate=1866.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 38 packets
+frame= 2275 fps= 16 q=31.0 size=   28444kB time=00:02:05.00 bitrate=1864.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 14 packets
+[h264 @ 0xa940c0] error while decoding MB 15 43, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 194 DC, 194 AC, 194 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[h264 @ 0xa94900] error while decoding MB 30 41, bytestream -8
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 339 DC, 339 AC, 339 MV errors in P frame
+frame= 2277 fps= 16 q=31.0 size=   28444kB time=00:02:05.08 bitrate=1862.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 57 packets
+[h264 @ 0xa95140] error while decoding MB 6 41, bytestream -10
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 363 DC, 363 AC, 363 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[h264 @ 0xa95980] error while decoding MB 5 41, bytestream -14
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 364 DC, 364 AC, 364 MV errors in P frame
+frame= 2280 fps= 16 q=31.0 size=   28515kB time=00:02:06.40 bitrate=1848.0kbits/s dup=0 drop=2    frame= 2283 fps= 16 q=31.0 size=   28515kB time=00:02:06.52 bitrate=1846.3kbits/s dup=0 drop=2    frame= 2286 fps= 16 q=32.0 size=   28515kB time=00:02:06.64 bitrate=1844.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 109 packets
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 76 DC, 76 AC, 76 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95140] error while decoding MB 8 42, bytestream -10
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 281 DC, 281 AC, 281 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2289 fps= 16 q=32.0 size=   28515kB time=00:02:06.76 bitrate=1842.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 2290 fps= 16 q=32.0 size=   28515kB time=00:02:06.80 bitrate=1842.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 215 packets
+[h264 @ 0xa92f80] error while decoding MB 20 37, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 669 DC, 669 AC, 669 MV errors in P frame
+frame= 2295 fps= 16 q=30.0 size=   28515kB time=00:02:07.00 bitrate=1839.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 29 packets
+[h264 @ 0xa940c0] error while decoding MB 17 39, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 512 DC, 512 AC, 512 MV errors in P frame
+frame= 2296 fps= 16 q=31.0 size=   28515kB time=00:02:07.04 bitrate=1838.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+frame= 2298 fps= 16 q=28.0 size=   28515kB time=00:02:07.12 bitrate=1837.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 49 packets
+[h264 @ 0xa95140] error while decoding MB 63 38, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 546 DC, 546 AC, 546 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa95980] error while decoding MB 54 40, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 395 DC, 395 AC, 395 MV errors in P frame
+[h264 @ 0xa92f80] error while decoding MB 40 40, bytestream -14
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa940c0] error while decoding MB 4 38, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 605 DC, 605 AC, 605 MV errors in P frame
+frame= 2301 fps= 16 q=30.0 size=   28578kB time=00:02:07.36 bitrate=1838.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa94900] error while decoding MB 38 39, bytestream -8
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 491 DC, 491 AC, 491 MV errors in P frame
+frame= 2302 fps= 16 q=31.0 size=   28578kB time=00:02:07.40 bitrate=1837.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 70 packets
+[h264 @ 0xa95980] error while decoding MB 75 2, bytestream -9
+[h264 @ 0xa95980] concealing 3414 DC, 3414 AC, 3414 MV errors in I frame
+frame= 2304 fps= 16 q=31.0 size=   28578kB time=00:02:08.00 bitrate=1829.0kbits/s dup=0 drop=2    frame= 2308 fps= 15 q=29.0 size=   28578kB time=00:02:08.76 bitrate=1818.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 49 packets
+[h264 @ 0xa95980] error while decoding MB 14 37, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 675 DC, 675 AC, 675 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 72 packets
+[h264 @ 0xa92f80] error while decoding MB 41 39, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 488 DC, 488 AC, 488 MV errors in P frame
+frame= 2310 fps= 15 q=28.0 size=   28578kB time=00:02:08.84 bitrate=1817.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 12 packets
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 312 DC, 312 AC, 312 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95140] error while decoding MB 40 43, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 169 DC, 169 AC, 169 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[h264 @ 0xa95980] error while decoding MB 6 43, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 203 DC, 203 AC, 203 MV errors in P frame
+frame= 2314 fps= 15 q=31.0 size=   28701kB time=00:02:09.92 bitrate=1809.7kbits/s dup=0 drop=2    frame= 2316 fps= 15 q=29.0 size=   28701kB time=00:02:10.20 bitrate=1805.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 83 packets
+[NULL @ 0x906ac0] RTP: missed 38 packets
+[h264 @ 0xa92f80] error while decoding MB 76 2, bytestream -24
+[h264 @ 0xa92f80] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+frame= 2320 fps= 15 q=28.0 size=   28732kB time=00:02:10.48 bitrate=1803.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa94900] error while decoding MB 4 43, bytestream -10
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 205 DC, 205 AC, 205 MV errors in P frame
+frame= 2322 fps= 15 q=26.0 size=   29190kB time=00:02:12.84 bitrate=1800.1kbits/s dup=0 drop=2    frame= 2323 fps= 15 q=26.0 size=   29190kB time=00:02:13.44 bitrate=1792.0kbits/s dup=0 drop=2    frame= 2326 fps= 15 q=27.0 size=   29190kB time=00:02:14.00 bitrate=1784.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 48 packets
+[NULL @ 0x906ac0] RTP: missed 10 packets
+frame= 2328 fps= 15 q=27.0 size=   29255kB time=00:02:14.48 bitrate=1782.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa92f80] error while decoding MB 39 40, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 410 DC, 410 AC, 410 MV errors in P frame
+frame= 2332 fps= 15 q=21.0 size=   29646kB time=00:02:15.48 bitrate=1792.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 124 packets
+[NULL @ 0x906ac0] RTP: missed 12 packets
+frame= 2337 fps= 15 q=26.0 size=   29965kB time=00:02:16.96 bitrate=1792.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 45 packets
+[NULL @ 0x906ac0] RTP: missed 54 packets
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 604 DC, 604 AC, 604 MV errors in P frame
+frame= 2343 fps= 15 q=22.0 size=   30186kB time=00:02:17.48 bitrate=1798.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 85 packets
+[h264 @ 0xa95980] error while decoding MB 39 38, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 570 DC, 570 AC, 570 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 56 packets
+frame= 2346 fps= 15 q=27.0 size=   30298kB time=00:02:18.68 bitrate=1789.7kbits/s dup=0 drop=2    frame= 2350 fps= 15 q=26.0 size=   30501kB time=00:02:19.16 bitrate=1795.5kbits/s dup=0 drop=2    frame= 2355 fps= 15 q=26.0 size=   30566kB time=00:02:20.12 bitrate=1787.0kbits/s dup=0 drop=2    frame= 2356 fps= 15 q=23.0 size=   30566kB time=00:02:20.16 bitrate=1786.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 168 packets
+[h264 @ 0xa94900] error while decoding MB 76 2, bytestream -32
+[h264 @ 0xa94900] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 10 packets
+[NULL @ 0x906ac0] RTP: missed 153 packets
+[h264 @ 0xa95980] error while decoding MB 29 20, bytestream -18
+[h264 @ 0xa95980] concealing 2020 DC, 2020 AC, 2020 MV errors in I frame
+frame= 2362 fps= 14 q=24.0 size=   30735kB time=00:02:22.04 bitrate=1772.6kbits/s dup=0 drop=2    frame= 2366 fps= 14 q=26.0 size=   30771kB time=00:02:23.08 bitrate=1761.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 130 packets
+frame= 2368 fps= 14 q=26.0 size=   30864kB time=00:02:23.72 bitrate=1759.3kbits/s dup=0 drop=2    [h264 @ 0xa95140] error while decoding MB 38 42, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 251 DC, 251 AC, 251 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 63 packets
+[NULL @ 0x906ac0] RTP: missed 292 packets
+[h264 @ 0xa94900] error while decoding MB 29 20, bytestream -24
+[h264 @ 0xa94900] concealing 2020 DC, 2020 AC, 2020 MV errors in I frame
+frame= 2373 fps= 14 q=28.0 size=   31096kB time=00:02:26.28 bitrate=1741.5kbits/s dup=0 drop=2    frame= 2374 fps= 14 q=28.0 size=   31096kB time=00:02:26.32 bitrate=1741.0kbits/s dup=0 drop=2    frame= 2379 fps= 14 q=23.0 size=   31096kB time=00:02:26.52 bitrate=1738.6kbits/s dup=0 drop=2    frame= 2381 fps= 14 q=25.0 size=   31096kB time=00:02:26.60 bitrate=1737.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 40 packets
+[h264 @ 0xa940c0] error while decoding MB 76 2, bytestream -22
+[h264 @ 0xa940c0] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+frame= 2386 fps= 14 q=28.0 size=   31407kB time=00:02:31.96 bitrate=1693.1kbits/s dup=0 drop=2    frame= 2392 fps= 14 q=27.0 size=   31440kB time=00:02:32.20 bitrate=1692.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa92f80] error while decoding MB 10 36, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 759 DC, 759 AC, 759 MV errors in P frame
+frame= 2395 fps= 14 q=26.0 size=   31569kB time=00:02:34.44 bitrate=1674.5kbits/s dup=0 drop=2    frame= 2398 fps= 14 q=27.0 size=   31612kB time=00:02:35.68 bitrate=1663.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 25 packets
+frame= 2404 fps= 14 q=27.0 size=   31820kB time=00:02:40.36 bitrate=1625.5kbits/s dup=0 drop=2    frame= 2410 fps= 14 q=23.0 size=   31820kB time=00:02:40.60 bitrate=1623.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 60 packets
+[NULL @ 0x906ac0] RTP: missed 5 packets
+[NULL @ 0x906ac0] RTP: missed 61 packets
+frame= 2418 fps= 14 q=24.0 size=   31820kB time=00:02:41.12 bitrate=1617.8kbits/s dup=0 drop=2    frame= 2422 fps= 14 q=25.0 size=   31820kB time=00:02:41.36 bitrate=1615.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 60 packets
+frame= 2424 fps= 14 q=24.0 size=   31820kB time=00:02:41.44 bitrate=1614.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2428 fps= 14 q=26.0 size=   31820kB time=00:02:41.60 bitrate=1613.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 35 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 24 packets
+[NULL @ 0x906ac0] RTP: missed 50 packets
+[h264 @ 0xa92f80] error while decoding MB 15 38, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 594 DC, 594 AC, 594 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 61 packets
+[h264 @ 0xa940c0] error while decoding MB 76 22, bytestream -17
+[h264 @ 0xa940c0] concealing 1813 DC, 1813 AC, 1813 MV errors in I frame
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 964 DC, 964 AC, 964 MV errors in P frame
+frame= 2433 fps= 14 q=24.0 size=   31844kB time=00:02:42.00 bitrate=1610.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 49 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 2439 fps= 14 q=26.0 size=   32003kB time=00:02:43.04 bitrate=1608.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 57 packets
+[NULL @ 0x906ac0] RTP: missed 53 packets
+[h264 @ 0xa95980] error while decoding MB 37 19, bytestream -34
+[h264 @ 0xa95980] concealing 2092 DC, 2092 AC, 2092 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 46 packets
+frame= 2445 fps= 14 q=24.0 size=   32003kB time=00:02:44.04 bitrate=1598.2kbits/s dup=0 drop=2    frame= 2448 fps= 14 q=25.0 size=   32003kB time=00:02:44.16 bitrate=1597.0kbits/s dup=0 drop=2    frame= 2451 fps= 14 q=22.0 size=   32051kB time=00:02:45.16 bitrate=1589.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 79 packets
+[NULL @ 0x906ac0] RTP: missed 38 packets
+[NULL @ 0x906ac0] RTP: missed 27 packets
+[h264 @ 0xa94900] error while decoding MB 34 43, bytestream -14
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 175 DC, 175 AC, 175 MV errors in P frame
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 180 DC, 180 AC, 180 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 34 packets
+[NULL @ 0x906ac0] RTP: missed 18 packets
+frame= 2457 fps= 14 q=25.0 size=   32088kB time=00:02:46.64 bitrate=1577.4kbits/s dup=0 drop=2    frame= 2459 fps= 14 q=25.0 size=   32088kB time=00:02:48.24 bitrate=1562.4kbits/s dup=0 drop=2    frame= 2464 fps= 14 q=27.0 size=   32088kB time=00:02:49.32 bitrate=1552.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 46 packets
+frame= 2470 fps= 14 q=26.0 size=   32145kB time=00:02:50.32 bitrate=1546.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 8 packets
+[NULL @ 0x906ac0] RTP: missed 47 packets
+frame= 2476 fps= 14 q=26.0 size=   32477kB time=00:02:51.84 bitrate=1548.2kbits/s dup=0 drop=2    frame= 2482 fps= 14 q=27.0 size=   32704kB time=00:02:53.84 bitrate=1541.2kbits/s dup=0 drop=2    frame= 2483 fps= 13 q=27.0 size=   32872kB time=00:02:54.60 bitrate=1542.3kbits/s dup=0 drop=2    frame= 2489 fps= 13 q=27.0 size=   32872kB time=00:02:54.84 bitrate=1540.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 54 packets
+frame= 2495 fps= 13 q=27.0 size=   32872kB time=00:02:55.08 bitrate=1538.1kbits/s dup=0 drop=2    frame= 2497 fps= 13 q=25.0 size=   32979kB time=00:02:55.60 bitrate=1538.5kbits/s dup=0 drop=2    frame= 2498 fps= 13 q=26.0 size=   32979kB time=00:02:55.64 bitrate=1538.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 98 packets
+[h264 @ 0xa92f80] error while decoding MB 11 40, bytestream -24
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 438 DC, 438 AC, 438 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 75 packets
+[NULL @ 0x906ac0] RTP: missed 33 packets
+[h264 @ 0xa94900] left block unavailable for requested intra4x4 mode -1 at 0 26
+[h264 @ 0xa94900] error while decoding MB 0 26, bytestream 658
+[h264 @ 0xa94900] concealing 1569 DC, 1569 AC, 1569 MV errors in I frame
+frame= 2503 fps= 13 q=27.0 size=   33011kB time=00:02:56.64 bitrate=1531.0kbits/s dup=0 drop=2    frame= 2506 fps= 13 q=27.0 size=   33038kB time=00:02:56.76 bitrate=1531.1kbits/s dup=0 drop=2    frame= 2509 fps= 13 q=27.0 size=   33038kB time=00:02:56.88 bitrate=1530.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 55 packets
+frame= 2512 fps= 13 q=27.0 size=   33038kB time=00:02:57.00 bitrate=1529.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 47 packets
+[h264 @ 0xa94900] error while decoding MB 57 17, bytestream -14
+[h264 @ 0xa94900] concealing 2232 DC, 2232 AC, 2232 MV errors in I frame
+[h264 @ 0xa95140] error while decoding MB 48 6, bytestream -8
+[h264 @ 0xa95140] concealing 3121 DC, 3121 AC, 3121 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 8 packets
+frame= 2515 fps= 13 q=27.0 size=   33038kB time=00:02:57.12 bitrate=1528.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 95 packets
+[h264 @ 0xa94900] error while decoding MB 21 21, bytestream -53
+[h264 @ 0xa94900] concealing 1948 DC, 1948 AC, 1948 MV errors in I frame
+frame= 2517 fps= 13 q=28.0 size=   33080kB time=00:02:57.60 bitrate=1525.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 57 packets
+frame= 2521 fps= 13 q=25.0 size=   33080kB time=00:02:57.76 bitrate=1524.5kbits/s dup=0 drop=2    frame= 2523 fps= 13 q=25.0 size=   33080kB time=00:02:57.84 bitrate=1523.8kbits/s dup=0 drop=2    frame= 2527 fps= 13 q=27.0 size=   33211kB time=00:02:59.28 bitrate=1517.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 57 packets
+[h264 @ 0xa95140] error while decoding MB 76 2, bytestream -10
+[h264 @ 0xa95140] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 43 packets
+[h264 @ 0xa940c0] error while decoding MB 29 20, bytestream -20
+[h264 @ 0xa940c0] concealing 2020 DC, 2020 AC, 2020 MV errors in I frame
+frame= 2532 fps= 13 q=28.0 size=   33365kB time=00:03:01.08 bitrate=1509.4kbits/s dup=0 drop=2    frame= 2533 fps= 13 q=25.0 size=   33365kB time=00:03:01.12 bitrate=1509.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 54 packets
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[NULL @ 0x906ac0] RTP: missed 37 packets
+frame= 2543 fps= 13 q=25.0 size=   33545kB time=00:03:03.32 bitrate=1499.0kbits/s dup=0 drop=2    frame= 2551 fps= 13 q=23.0 size=   34011kB time=00:03:06.20 bitrate=1496.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 160 packets
+frame= 2556 fps= 13 q=25.0 size=   34323kB time=00:03:07.28 bitrate=1501.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa940c0] error while decoding MB 28 20, bytestream -32
+[h264 @ 0xa940c0] concealing 2021 DC, 2021 AC, 2021 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 108 packets
+frame= 2564 fps= 13 q=26.0 size=   34618kB time=00:03:09.60 bitrate=1495.7kbits/s dup=0 drop=2    [h264 @ 0xa95980] error while decoding MB 79 21, bytestream -22
+[h264 @ 0xa95980] concealing 1890 DC, 1890 AC, 1890 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 247 packets
+[h264 @ 0xa94900] error while decoding MB 22 21, bytestream -18
+[h264 @ 0xa94900] concealing 1947 DC, 1947 AC, 1947 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95140] error while decoding MB 41 41, bytestream -5
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 328 DC, 328 AC, 328 MV errors in P frame
+frame= 2571 fps= 13 q=26.0 size=   34618kB time=00:03:09.88 bitrate=1493.5kbits/s dup=0 drop=2    frame= 2578 fps= 13 q=22.0 size=   34618kB time=00:03:10.16 bitrate=1491.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 58 packets
+[h264 @ 0xa940c0] error while decoding MB 76 2, bytestream -18
+[h264 @ 0xa940c0] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa94900] error while decoding MB 2 44, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 127 DC, 127 AC, 127 MV errors in P frame
+frame= 2584 fps= 13 q=26.0 size=   34837kB time=00:03:13.08 bitrate=1478.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 37 packets
+[NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa92f80] error while decoding MB 76 2, bytestream -14
+[h264 @ 0xa92f80] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+frame= 2596 fps= 13 q=26.0 size=   35203kB time=00:03:18.88 bitrate=1450.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 43 packets
+frame= 2607 fps= 13 q=19.0 size=   35226kB time=00:03:19.32 bitrate=1447.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 24 packets
+[h264 @ 0xa92f80] error while decoding MB 26 32, bytestream -28
+[h264 @ 0xa92f80] concealing 1063 DC, 1063 AC, 1063 MV errors in I frame
+frame= 2621 fps= 13 q=24.0 size=   35596kB time=00:03:21.00 bitrate=1450.7kbits/s dup=0 drop=2    frame= 2627 fps= 13 q=25.0 size=   35596kB time=00:03:21.56 bitrate=1446.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 50 packets
+[h264 @ 0xa94900] error while decoding MB 24 21, bytestream -28
+[h264 @ 0xa94900] concealing 1945 DC, 1945 AC, 1945 MV errors in I frame
+frame= 2633 fps= 13 q=25.0 size=   35596kB time=00:03:21.80 bitrate=1445.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 40 packets
+[h264 @ 0xa95980] error while decoding MB 76 2, bytestream -6
+[h264 @ 0xa95980] concealing 3413 DC, 3413 AC, 3413 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 48 34, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 881 DC, 881 AC, 881 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa94900] error while decoding MB 33 31, bytestream -8
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1136 DC, 1136 AC, 1136 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 7 packets
+frame= 2647 fps= 13 q=28.0 size=   35596kB time=00:03:22.72 bitrate=1438.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 19 packets
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa95980] left block unavailable for requested intra mode at 0 7
+[h264 @ 0xa95980] error while decoding MB 0 7, bytestream 1121
+[h264 @ 0xa95980] concealing 3089 DC, 3089 AC, 3089 MV errors in I frame
+frame= 2658 fps= 13 q=22.0 size=   35716kB time=00:03:23.32 bitrate=1439.0kbits/s dup=0 drop=2    frame= 2670 fps= 13 q=22.0 size=   35736kB time=00:03:24.84 bitrate=1429.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 55 packets
+[h264 @ 0xa94900] error while decoding MB 30 20, bytestream -64
+[h264 @ 0xa94900] concealing 2019 DC, 2019 AC, 2019 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 59 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa94900] left block unavailable for requested intra4x4 mode -1 at 0 28
+[h264 @ 0xa94900] error while decoding MB 0 28, bytestream 4741
+[h264 @ 0xa94900] concealing 1409 DC, 1409 AC, 1409 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2689 fps= 13 q=25.0 size=   35790kB time=00:03:25.96 bitrate=1423.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa940c0] error while decoding MB 29 20, bytestream -12
+[h264 @ 0xa940c0] concealing 2020 DC, 2020 AC, 2020 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 2703 fps= 13 q=27.0 size=   35790kB time=00:03:27.32 bitrate=1414.2kbits/s dup=0 drop=2    frame= 2716 fps= 13 q=27.0 size=   35907kB time=00:03:29.04 bitrate=1407.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 14 packets
+frame= 2730 fps= 13 q=26.0 size=   36056kB time=00:03:29.76 bitrate=1408.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 8 packets
+[h264 @ 0xa94900] concealing 2017 DC, 2017 AC, 2017 MV errors in I frame
+frame= 2741 fps= 13 q=29.0 size=   36065kB time=00:03:30.20 bitrate=1405.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa94900] error while decoding MB 19 36, bytestream -10
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 750 DC, 750 AC, 750 MV errors in P frame
+frame= 2748 fps= 13 q=29.0 size=   36103kB time=00:03:30.48 bitrate=1405.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2756 fps= 13 q=25.0 size=   36281kB time=00:03:31.08 bitrate=1408.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95140] error while decoding MB 40 41, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 329 DC, 329 AC, 329 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 16 36, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 753 DC, 753 AC, 753 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 14 packets
+[NULL @ 0x906ac0] RTP: missed 28 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95140] error while decoding MB 26 28, bytestream -12
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 1383 DC, 1383 AC, 1383 MV errors in P frame
+[h264 @ 0xa95980] error while decoding MB 16 30, bytestream -14
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1233 DC, 1233 AC, 1233 MV errors in P frame
+frame= 2774 fps= 13 q=26.0 size=   36500kB time=00:03:31.88 bitrate=1411.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2782 fps= 13 q=28.0 size=   36651kB time=00:03:32.20 bitrate=1414.9kbits/s dup=0 drop=2    frame= 2794 fps= 13 q=28.0 size=   36860kB time=00:03:32.88 bitrate=1418.4kbits/s dup=0 drop=2    frame= 2801 fps= 13 q=29.0 size=   37075kB time=00:03:33.40 bitrate=1423.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa95140] error while decoding MB 67 43, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 142 DC, 142 AC, 142 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 38 packets
+[h264 @ 0xa94900] error while decoding MB 39 16, bytestream -8
+[h264 @ 0xa94900] concealing 2330 DC, 2330 AC, 2330 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[h264 @ 0xa95140] error while decoding MB 23 38, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 586 DC, 586 AC, 586 MV errors in P frame
+frame= 2813 fps= 13 q=29.0 size=   37075kB time=00:03:33.96 bitrate=1419.5kbits/s dup=0 drop=2    frame= 2820 fps= 13 q=29.0 size=   37075kB time=00:03:34.24 bitrate=1417.7kbits/s dup=0 drop=2    frame= 2833 fps= 13 q=26.0 size=   37189kB time=00:03:34.76 bitrate=1418.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+frame= 2844 fps= 13 q=25.0 size=   37368kB time=00:03:35.60 bitrate=1419.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 34 packets
+[h264 @ 0xa94900] error while decoding MB 60 17, bytestream -24
+[h264 @ 0xa94900] concealing 2229 DC, 2229 AC, 2229 MV errors in I frame
+frame= 2858 fps= 13 q=28.0 size=   37586kB time=00:03:36.16 bitrate=1424.4kbits/s dup=0 drop=2    frame= 2866 fps= 13 q=29.0 size=   37681kB time=00:03:36.68 bitrate=1424.6kbits/s dup=0 drop=2    frame= 2871 fps= 13 q=29.0 size=   37681kB time=00:03:36.88 bitrate=1423.3kbits/s dup=0 drop=2    frame= 2873 fps= 13 q=26.0 size=   37681kB time=00:03:36.96 bitrate=1422.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 8 packets
+[h264 @ 0xa92f80] error while decoding MB 43 26, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1526 DC, 1526 AC, 1526 MV errors in P frame
+frame= 2880 fps= 13 q=29.0 size=   37777kB time=00:03:37.36 bitrate=1423.8kbits/s dup=0 drop=2    frame= 2883 fps= 13 q=29.0 size=   37777kB time=00:03:37.48 bitrate=1423.0kbits/s dup=0 drop=2    frame= 2890 fps= 13 q=29.0 size=   37777kB time=00:03:37.76 bitrate=1421.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 17 packets
+[NULL @ 0x906ac0] RTP: missed 19 packets
+[h264 @ 0xa94900] left block unavailable for requested intra4x4 mode -1 at 0 19
+[h264 @ 0xa94900] error while decoding MB 0 19, bytestream 1449
+[h264 @ 0xa94900] concealing 2129 DC, 2129 AC, 2129 MV errors in I frame
+frame= 2896 fps= 13 q=27.0 size=   37777kB time=00:03:38.00 bitrate=1419.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[NULL @ 0x906ac0] RTP: missed 41 packets
+[NULL @ 0x906ac0] RTP: missed 6 packets
+[NULL @ 0x906ac0] RTP: missed 60 packets
+[h264 @ 0xa92f80] error while decoding MB 39 40, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 410 DC, 410 AC, 410 MV errors in P frame
+frame= 2907 fps= 13 q=29.0 size=   37979kB time=00:03:38.72 bitrate=1422.5kbits/s dup=0 drop=2    frame= 2916 fps= 13 q=25.0 size=   38113kB time=00:03:39.08 bitrate=1425.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 29 packets
+[h264 @ 0xa95140] error while decoding MB 77 40, bytestream -6
+[h264 @ 0xa95140] concealing 372 DC, 372 AC, 372 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa95980] left block unavailable for requested intra4x4 mode -1 at 0 8
+[h264 @ 0xa95980] error while decoding MB 0 8, bytestream 1601
+[h264 @ 0xa95980] concealing 3009 DC, 3009 AC, 3009 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa92f80] error while decoding MB 39 40, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 410 DC, 410 AC, 410 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa940c0] error while decoding MB 16 42, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 273 DC, 273 AC, 273 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 53 packets
+[h264 @ 0xa94900] error while decoding MB 43 19, bytestream -29
+[h264 @ 0xa94900] concealing 2086 DC, 2086 AC, 2086 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2928 fps= 13 q=25.0 size=   38857kB time=00:03:40.48 bitrate=1443.7kbits/s dup=0 drop=2    [h264 @ 0xa95140] error while decoding MB 36 40, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 413 DC, 413 AC, 413 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 41 packets
+[NULL @ 0x906ac0] RTP: missed 8 packets
+frame= 2940 fps= 13 q=21.0 size=   39636kB time=00:03:42.00 bitrate=1462.6kbits/s dup=0 drop=2    frame= 2947 fps= 13 q=24.0 size=   40810kB time=00:03:43.88 bitrate=1493.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa92f80] error while decoding MB 32 30, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1217 DC, 1217 AC, 1217 MV errors in P frame
+frame= 2960 fps= 13 q=24.0 size=   41629kB time=00:03:45.00 bitrate=1515.7kbits/s dup=0 drop=2    frame= 2966 fps= 13 q=25.0 size=   41859kB time=00:03:45.72 bitrate=1519.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 18 packets
+[NULL @ 0x906ac0] RTP: missed 38 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 2972 fps= 13 q=27.0 size=   41965kB time=00:03:45.96 bitrate=1521.4kbits/s dup=0 drop=2    frame= 2978 fps= 13 q=28.0 size=   42097kB time=00:03:46.20 bitrate=1524.6kbits/s dup=0 drop=2    frame= 2981 fps= 13 q=27.0 size=   42206kB time=00:03:46.32 bitrate=1527.7kbits/s dup=0 drop=2    frame= 2984 fps= 13 q=28.0 size=   42206kB time=00:03:46.44 bitrate=1526.9kbits/s dup=0 drop=2    frame= 2985 fps= 13 q=28.0 size=   42206kB time=00:03:46.48 bitrate=1526.6kbits/s dup=0 drop=2    frame= 2988 fps= 13 q=26.0 size=   42346kB time=00:03:46.68 bitrate=1530.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 2997 fps= 13 q=28.0 size=   43068kB time=00:03:47.68 bitrate=1549.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 41 packets
+frame= 3005 fps= 13 q=28.0 size=   43341kB time=00:03:48.00 bitrate=1557.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 54 packets
+[NULL @ 0x906ac0] RTP: missed 24 packets
+frame= 3013 fps= 13 q=28.0 size=   43550kB time=00:03:48.32 bitrate=1562.6kbits/s dup=0 drop=2    [h264 @ 0xa95140] error while decoding MB 37 39, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 492 DC, 492 AC, 492 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 86 packets
+[NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa94900] error while decoding MB 29 26, bytestream -5
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1540 DC, 1540 AC, 1540 MV errors in P frame
+[h264 @ 0xa95140] error while decoding MB 42 32, bytestream -5
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 1047 DC, 1047 AC, 1047 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 20 packets
+[h264 @ 0xa95980] error while decoding MB 48 30, bytestream -14
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1201 DC, 1201 AC, 1201 MV errors in P frame
+frame= 3022 fps= 13 q=28.0 size=   43757kB time=00:03:48.76 bitrate=1567.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 108 packets
+[h264 @ 0xa95140] error while decoding MB 37 35, bytestream -12
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 812 DC, 812 AC, 812 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa95980] error while decoding MB 26 29, bytestream -22
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1303 DC, 1303 AC, 1303 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 49 packets
+[NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa95980] error while decoding MB 34 31, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1135 DC, 1135 AC, 1135 MV errors in P frame
+frame= 3031 fps= 13 q=26.0 size=   44111kB time=00:03:49.32 bitrate=1575.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 38 packets
+[h264 @ 0xa95980] error while decoding MB 31 29, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1298 DC, 1298 AC, 1298 MV errors in P frame
+frame= 3037 fps= 13 q=28.0 size=   44225kB time=00:03:50.08 bitrate=1574.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 33 packets
+frame= 3043 fps= 13 q=28.0 size=   44385kB time=00:03:51.20 bitrate=1572.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 45 packets
+[h264 @ 0xa95980] error while decoding MB 67 9, bytestream -14
+[h264 @ 0xa95980] concealing 2862 DC, 2862 AC, 2862 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 11 packets
+frame= 3050 fps= 13 q=26.0 size=   44720kB time=00:03:53.80 bitrate=1566.9kbits/s dup=0 drop=2    [h264 @ 0xa92f80] error while decoding MB 29 38, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 580 DC, 580 AC, 580 MV errors in P frame
+frame= 3058 fps= 13 q=28.0 size=   44849kB time=00:03:54.56 bitrate=1566.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 12 packets
+[h264 @ 0xa95140] concealing 1239 DC, 1239 AC, 1239 MV errors in I frame
+frame= 3064 fps= 13 q=28.0 size=   45032kB time=00:03:55.28 bitrate=1567.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa95140] error while decoding MB 52 38, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 557 DC, 557 AC, 557 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 21 packets
+frame= 3070 fps= 13 q=26.0 size=   45222kB time=00:03:55.96 bitrate=1570.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[h264 @ 0xa92f80] error while decoding MB 76 39, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 453 DC, 453 AC, 453 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra4x4 mode -1 at 0 3
+[h264 @ 0xa92f80] error while decoding MB 0 3, bytestream 15627
+[h264 @ 0xa92f80] concealing 3409 DC, 3409 AC, 3409 MV errors in I frame
+[h264 @ 0xa940c0] error while decoding MB 35 26, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1534 DC, 1534 AC, 1534 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[NULL @ 0x906ac0] RTP: missed 17 packets
+[NULL @ 0x906ac0] RTP: missed 28 packets
+[h264 @ 0xa92f80] error while decoding MB 38 40, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 411 DC, 411 AC, 411 MV errors in P frame
+[h264 @ 0xa940c0] concealing 2178 DC, 2178 AC, 2178 MV errors in I frame
+frame= 3085 fps= 13 q=26.0 size=   45930kB time=00:03:57.00 bitrate=1587.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+frame= 3098 fps= 13 q=21.0 size=   46360kB time=00:03:58.04 bitrate=1595.4kbits/s dup=0 drop=2    [h264 @ 0xa95140] error while decoding MB 4 29, bytestream -12
+[h264 @ 0xa95140] concealing 1325 DC, 1325 AC, 1325 MV errors in I frame
+frame= 3113 fps= 13 q=25.0 size=   47448kB time=00:03:59.72 bitrate=1621.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 33 packets
+[h264 @ 0xa94900] error while decoding MB 15 25, bytestream -8
+[h264 @ 0xa94900] concealing 1634 DC, 1634 AC, 1634 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa940c0] error while decoding MB 7 27, bytestream -10
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1482 DC, 1482 AC, 1482 MV errors in P frame
+frame= 3127 fps= 13 q=27.0 size=   47497kB time=00:04:00.52 bitrate=1617.7kbits/s dup=0 drop=2    frame= 3138 fps= 13 q=25.0 size=   47583kB time=00:04:00.96 bitrate=1617.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+    Last message repeated 1 times
+[h264 @ 0xa940c0] error while decoding MB 35 29, bytestream -8
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1294 DC, 1294 AC, 1294 MV errors in P frame
+frame= 3147 fps= 13 q=27.0 size=   47735kB time=00:04:01.52 bitrate=1619.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa940c0] error while decoding MB 8 43, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 201 DC, 201 AC, 201 MV errors in P frame
+[h264 @ 0xa94900] error while decoding MB 5 28, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1404 DC, 1404 AC, 1404 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[h264 @ 0xa940c0] error while decoding MB 44 39, bytestream -10
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 485 DC, 485 AC, 485 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa95140] error while decoding MB 70 42, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 219 DC, 219 AC, 219 MV errors in P frame
+frame= 3159 fps= 13 q=28.0 size=   47735kB time=00:04:02.08 bitrate=1615.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa95980] error while decoding MB 39 37, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 650 DC, 650 AC, 650 MV errors in P frame
+frame= 3166 fps= 13 q=28.0 size=   47782kB time=00:04:02.36 bitrate=1615.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 39 packets
+[h264 @ 0xa95140] error while decoding MB 56 17, bytestream -10
+[h264 @ 0xa95140] concealing 2233 DC, 2233 AC, 2233 MV errors in I frame
+frame= 3175 fps= 13 q=28.0 size=   47915kB time=00:04:02.84 bitrate=1616.4kbits/s dup=0 drop=2    frame= 3185 fps= 13 q=27.0 size=   47997kB time=00:04:03.64 bitrate=1613.8kbits/s dup=0 drop=2    frame= 3186 fps= 13 q=28.0 size=   47997kB time=00:04:03.68 bitrate=1613.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa95980] error while decoding MB 20 32, bytestream -26
+[h264 @ 0xa95980] concealing 1069 DC, 1069 AC, 1069 MV errors in I frame
+frame= 3193 fps= 13 q=24.0 size=   48202kB time=00:04:04.12 bitrate=1617.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa940c0] error while decoding MB 27 28, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1382 DC, 1382 AC, 1382 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 3203 fps= 13 q=25.0 size=   48437kB time=00:04:04.68 bitrate=1621.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 18 packets
+[NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa940c0] left block unavailable for requested intra mode at 0 3
+[h264 @ 0xa940c0] error while decoding MB 0 3, bytestream 3528
+[h264 @ 0xa940c0] concealing 3409 DC, 3409 AC, 3409 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 28 packets
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95980] error while decoding MB 43 37, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 646 DC, 646 AC, 646 MV errors in P frame
+frame= 3209 fps= 13 q=25.0 size=   48437kB time=00:04:04.92 bitrate=1620.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa940c0] error while decoding MB 46 22, bytestream -10
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1843 DC, 1843 AC, 1843 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 49 packets
+frame= 3221 fps= 13 q=27.0 size=   48588kB time=00:04:05.44 bitrate=1621.7kbits/s dup=0 drop=2    [h264 @ 0xa940c0] error while decoding MB 11 16, bytestream -6
+[h264 @ 0xa940c0] concealing 2358 DC, 2358 AC, 2358 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[h264 @ 0xa92f80] error while decoding MB 38 34, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 891 DC, 891 AC, 891 MV errors in P frame
+frame= 3231 fps= 13 q=25.0 size=   48917kB time=00:04:06.12 bitrate=1628.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa94900] left block unavailable for requested intra mode at 0 17
+[h264 @ 0xa94900] error while decoding MB 0 17, bytestream 24337
+[h264 @ 0xa94900] concealing 2289 DC, 2289 AC, 2289 MV errors in I frame
+frame= 3237 fps= 13 q=27.0 size=   49222kB time=00:04:07.20 bitrate=1631.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa92f80] error while decoding MB 44 32, bytestream -14
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1045 DC, 1045 AC, 1045 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 32 packets
+[h264 @ 0xa94900] error while decoding MB 78 21, bytestream -14
+[h264 @ 0xa94900] concealing 1891 DC, 1891 AC, 1891 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 5 packets
+frame= 3249 fps= 13 q=27.0 size=   49593kB time=00:04:08.56 bitrate=1634.5kbits/s dup=0 drop=2    frame= 3257 fps= 13 q=24.0 size=   49660kB time=00:04:09.12 bitrate=1633.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 48 packets
+[h264 @ 0xa95980] concealing 1403 DC, 1403 AC, 1403 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[h264 @ 0xa95980] error while decoding MB 37 28, bytestream -9
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1372 DC, 1372 AC, 1372 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa94900] error while decoding MB 36 29, bytestream -18
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1293 DC, 1293 AC, 1293 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 38 packets
+[h264 @ 0xa940c0] error while decoding MB 36 27, bytestream -12
+[h264 @ 0xa940c0] concealing 1453 DC, 1453 AC, 1453 MV errors in I frame
+frame= 3272 fps= 13 q=27.0 size=   49966kB time=00:04:10.12 bitrate=1636.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa92f80] error while decoding MB 12 30, bytestream -6
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1237 DC, 1237 AC, 1237 MV errors in P frame
+frame= 3281 fps= 13 q=26.0 size=   50231kB time=00:04:10.72 bitrate=1641.2kbits/s dup=0 drop=2    frame= 3288 fps= 13 q=26.0 size=   50616kB time=00:04:11.44 bitrate=1649.1kbits/s dup=0 drop=2    frame= 3297 fps= 13 q=24.0 size=   50870kB time=00:04:11.88 bitrate=1654.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 50 25, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1599 DC, 1599 AC, 1599 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 35 packets
+frame= 3306 fps= 13 q=28.0 size=   51552kB time=00:04:12.80 bitrate=1670.5kbits/s dup=0 drop=2    frame= 3319 fps= 13 q=28.0 size=   51889kB time=00:04:13.32 bitrate=1678.0kbits/s dup=0 drop=2    frame= 3327 fps= 13 q=28.0 size=   51969kB time=00:04:13.64 bitrate=1678.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 18 packets
+[h264 @ 0xa95980] error while decoding MB 76 34, bytestream -44
+[h264 @ 0xa95980] concealing 853 DC, 853 AC, 853 MV errors in I frame
+frame= 3337 fps= 13 q=28.0 size=   52277kB time=00:04:14.12 bitrate=1685.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 215 DC, 215 AC, 215 MV errors in P frame
+frame= 3345 fps= 13 q=28.0 size=   52353kB time=00:04:14.44 bitrate=1685.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 8 packets
+[NULL @ 0x906ac0] RTP: missed 6 packets
+[NULL @ 0x906ac0] RTP: missed 10 packets
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa95140] left block unavailable for requested intra mode at 0 7
+[h264 @ 0xa95140] error while decoding MB 0 7, bytestream 9450
+[h264 @ 0xa95140] concealing 3089 DC, 3089 AC, 3089 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 44 31, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1125 DC, 1125 AC, 1125 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 12 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa94900] error while decoding MB 43 31, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1126 DC, 1126 AC, 1126 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95980] error while decoding MB 56 27, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1433 DC, 1433 AC, 1433 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 23 packets
+frame= 3357 fps= 13 q=27.0 size=   52694kB time=00:04:15.08 bitrate=1692.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 10 packets
+[NULL @ 0x906ac0] RTP: missed 28 packets
+[h264 @ 0xa92f80] concealing 3043 DC, 3043 AC, 3043 MV errors in I frame
+frame= 3369 fps= 13 q=25.0 size=   52990kB time=00:04:15.64 bitrate=1698.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 963 DC, 963 AC, 963 MV errors in P frame
+frame= 3383 fps= 13 q=28.0 size=   53420kB time=00:04:17.32 bitrate=1700.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra mode at 0 42
+[h264 @ 0xa92f80] error while decoding MB 0 42, bytestream 3038
+[h264 @ 0xa92f80] concealing 289 DC, 289 AC, 289 MV errors in I frame
+frame= 3396 fps= 13 q=24.0 size=   53603kB time=00:04:18.04 bitrate=1701.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 63 packets
+frame= 3409 fps= 13 q=28.0 size=   53845kB time=00:04:18.76 bitrate=1704.6kbits/s dup=0 drop=2    frame= 3422 fps= 13 q=28.0 size=   54088kB time=00:04:19.28 bitrate=1708.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa95980] left block unavailable for requested intra mode at 0 23
+[h264 @ 0xa95980] error while decoding MB 0 23, bytestream 5618
+[h264 @ 0xa95980] concealing 1809 DC, 1809 AC, 1809 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95140] error while decoding MB 54 38, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 555 DC, 555 AC, 555 MV errors in P frame
+frame= 3434 fps= 13 q=28.0 size=   54361kB time=00:04:20.20 bitrate=1711.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 12 packets
+[NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa940c0] concealing 1709 DC, 1709 AC, 1709 MV errors in I frame
+frame= 3447 fps= 13 q=26.0 size=   54617kB time=00:04:20.72 bitrate=1716.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95140] error while decoding MB 30 41, bytestream -10
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 339 DC, 339 AC, 339 MV errors in P frame
+frame= 3464 fps= 13 q=26.0 size=   54859kB time=00:04:21.48 bitrate=1718.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 9 packets
+[NULL @ 0x906ac0] RTP: missed 12 packets
+[h264 @ 0xa94900] left block unavailable for requested intra4x4 mode -1 at 0 26
+[h264 @ 0xa94900] error while decoding MB 0 26, bytestream 388
+[h264 @ 0xa94900] concealing 1569 DC, 1569 AC, 1569 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 29 41, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 340 DC, 340 AC, 340 MV errors in P frame
+frame= 3479 fps= 13 q=26.0 size=   55120kB time=00:04:22.28 bitrate=1721.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 9 packets
+[h264 @ 0xa95140] error while decoding MB 25 41, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 344 DC, 344 AC, 344 MV errors in P frame
+frame= 3493 fps= 13 q=26.0 size=   55375kB time=00:04:22.84 bitrate=1725.9kbits/s dup=0 drop=2    frame= 3505 fps= 13 q=27.0 size=   55798kB time=00:04:23.32 bitrate=1735.9kbits/s dup=0 drop=2    frame= 3515 fps= 13 q=27.0 size=   56153kB time=00:04:23.72 bitrate=1744.3kbits/s dup=0 drop=2    frame= 3527 fps= 13 q=28.0 size=   56636kB time=00:04:24.36 bitrate=1755.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa95980] error while decoding MB 51 38, bytestream -10
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 558 DC, 558 AC, 558 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 41 DC, 41 AC, 41 MV errors in P frame
+frame= 3537 fps= 13 q=28.0 size=   56983kB time=00:04:24.76 bitrate=1763.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa92f80] error while decoding MB 79 38, bytestream -5
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 530 DC, 530 AC, 530 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa94900] error while decoding MB 79 43, bytestream -12
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 130 DC, 130 AC, 130 MV errors in P frame
+frame= 3545 fps= 13 q=28.0 size=   57115kB time=00:04:25.08 bitrate=1765.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 20 packets
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 387 DC, 387 AC, 387 MV errors in P frame
+frame= 3554 fps= 13 q=28.0 size=   57389kB time=00:04:25.44 bitrate=1771.1kbits/s dup=0 drop=2    frame= 3561 fps= 13 q=27.0 size=   57646kB time=00:04:25.84 bitrate=1776.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 10 packets
+[h264 @ 0xa95980] error while decoding MB 74 44, bytestream -24
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 55 DC, 55 AC, 55 MV errors in P frame
+frame= 3567 fps= 13 q=28.0 size=   57663kB time=00:04:26.20 bitrate=1774.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 8 38, bytestream -10
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 601 DC, 601 AC, 601 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 53 packets
+[h264 @ 0xa94900] error while decoding MB 79 38, bytestream -8
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 530 DC, 530 AC, 530 MV errors in P frame
+frame= 3578 fps= 13 q=28.0 size=   57762kB time=00:04:26.72 bitrate=1774.1kbits/s dup=0 drop=2    frame= 3588 fps= 13 q=28.0 size=   57839kB time=00:04:27.20 bitrate=1773.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 28 packets
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[h264 @ 0xa92f80] error while decoding MB 40 27, bytestream -6
+[h264 @ 0xa92f80] concealing 1449 DC, 1449 AC, 1449 MV errors in I frame
+frame= 3599 fps= 13 q=28.0 size=   58274kB time=00:04:28.16 bitrate=1780.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 46 31, bytestream -18
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1123 DC, 1123 AC, 1123 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 48 packets
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa95140] error while decoding MB 26 21, bytestream -48
+[h264 @ 0xa95140] concealing 1943 DC, 1943 AC, 1943 MV errors in I frame
+frame= 3609 fps= 13 q=28.0 size=   58388kB time=00:04:28.56 bitrate=1781.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa92f80] error while decoding MB 65 17, bytestream -37
+[h264 @ 0xa92f80] concealing 2224 DC, 2224 AC, 2224 MV errors in I frame
+frame= 3620 fps= 13 q=28.0 size=   59040kB time=00:04:29.40 bitrate=1795.3kbits/s dup=0 drop=2    frame= 3632 fps= 13 q=25.0 size=   59810kB time=00:04:30.68 bitrate=1810.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[h264 @ 0xa92f80] concealing 1808 DC, 1808 AC, 1808 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[h264 @ 0xa940c0] error while decoding MB 28 22, bytestream -8
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1861 DC, 1861 AC, 1861 MV errors in P frame
+frame= 3646 fps= 13 q=26.0 size=   60137kB time=00:04:31.24 bitrate=1816.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa94900] error while decoding MB 46 21, bytestream -20
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 49 28, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1360 DC, 1360 AC, 1360 MV errors in P frame
+[h264 @ 0xa94900] concealing 1923 DC, 1923 AC, 1923 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 40 packets
+[h264 @ 0xa940c0] error while decoding MB 42 16, bytestream -6
+[h264 @ 0xa940c0] concealing 2327 DC, 2327 AC, 2327 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 18 packets
+[h264 @ 0xa94900] error while decoding MB 76 34, bytestream -26
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 853 DC, 853 AC, 853 MV errors in P frame
+frame= 3664 fps= 13 q=26.0 size=   60530kB time=00:04:32.00 bitrate=1823.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa94900] left block unavailable for requested intra4x4 mode -1 at 0 26
+[h264 @ 0xa94900] error while decoding MB 0 26, bytestream 11318
+[h264 @ 0xa94900] concealing 1569 DC, 1569 AC, 1569 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[h264 @ 0xa95140] error while decoding MB 52 39, bytestream -16
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 477 DC, 477 AC, 477 MV errors in P frame
+frame= 3674 fps= 13 q=23.0 size=   60957kB time=00:04:32.72 bitrate=1831.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95140] error while decoding MB 55 36, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 714 DC, 714 AC, 714 MV errors in P frame
+frame= 3694 fps= 13 q=26.0 size=   61800kB time=00:04:34.00 bitrate=1847.7kbits/s dup=0 drop=2    frame= 3707 fps= 13 q=28.0 size=   62417kB time=00:04:34.76 bitrate=1861.0kbits/s dup=0 drop=2    frame= 3715 fps= 13 q=28.0 size=   62704kB time=00:04:35.08 bitrate=1867.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa94900] error while decoding MB 38 24, bytestream -6
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1691 DC, 1691 AC, 1691 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa92f80] error while decoding MB 64 26, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1505 DC, 1505 AC, 1505 MV errors in P frame
+frame= 3725 fps= 13 q=28.0 size=   63064kB time=00:04:35.48 bitrate=1875.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa940c0] error while decoding MB 46 22, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1843 DC, 1843 AC, 1843 MV errors in P frame
+frame= 3738 fps= 14 q=27.0 size=   63403kB time=00:04:36.00 bitrate=1881.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 18 packets
+[NULL @ 0x906ac0] RTP: missed 2 packets
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1315 DC, 1315 AC, 1315 MV errors in P frame
+frame= 3747 fps= 14 q=28.0 size=   63679kB time=00:04:36.44 bitrate=1887.1kbits/s dup=0 drop=2    frame= 3761 fps= 14 q=27.0 size=   64324kB time=00:04:37.20 bitrate=1901.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 14 packets
+[NULL @ 0x906ac0] RTP: missed 8 packets
+[h264 @ 0xa95140] error while decoding MB 56 26, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 1513 DC, 1513 AC, 1513 MV errors in P frame
+frame= 3774 fps= 14 q=28.0 size=   64764kB time=00:04:38.12 bitrate=1907.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 27 packets
+[NULL @ 0x906ac0] RTP: missed 28 packets
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1744 DC, 1744 AC, 1744 MV errors in P frame
+frame= 3788 fps= 14 q=26.0 size=   65266kB time=00:04:38.68 bitrate=1918.6kbits/s dup=0 drop=2    frame= 3800 fps= 14 q=26.0 size=   65700kB time=00:04:39.52 bitrate=1925.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 3814 fps= 14 q=28.0 size=   65980kB time=00:04:40.40 bitrate=1927.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa94900] error while decoding MB 37 24, bytestream -14
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1692 DC, 1692 AC, 1692 MV errors in P frame
+frame= 3828 fps= 14 q=28.0 size=   66137kB time=00:04:40.96 bitrate=1928.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa95980] error while decoding MB 26 22, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1863 DC, 1863 AC, 1863 MV errors in P frame
+frame= 3839 fps= 14 q=28.0 size=   66468kB time=00:04:41.52 bitrate=1934.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+frame= 3849 fps= 14 q=27.0 size=   66696kB time=00:04:41.92 bitrate=1938.1kbits/s dup=0 drop=2    [h264 @ 0xa95980] error while decoding MB 25 27, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 1464 DC, 1464 AC, 1464 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 3860 fps= 14 q=28.0 size=   66902kB time=00:04:42.44 bitrate=1940.5kbits/s dup=0 drop=2    frame= 3872 fps= 14 q=28.0 size=   67105kB time=00:04:42.96 bitrate=1942.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 1104 DC, 1104 AC, 1104 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 3883 fps= 14 q=28.0 size=   67308kB time=00:04:43.56 bitrate=1944.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95140] error while decoding MB 29 35, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 820 DC, 820 AC, 820 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 2 packets
+frame= 3892 fps= 14 q=28.0 size=   67431kB time=00:04:43.92 bitrate=1945.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 11 packets
+[h264 @ 0xa95140] error while decoding MB 71 36, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 698 DC, 698 AC, 698 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 33 packets
+[h264 @ 0xa92f80] error while decoding MB 44 6, bytestream -14
+[h264 @ 0xa92f80] concealing 3125 DC, 3125 AC, 3125 MV errors in I frame
+frame= 3905 fps= 14 q=28.0 size=   67616kB time=00:04:44.52 bitrate=1946.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa940c0] error while decoding MB 29 26, bytestream -9
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 1540 DC, 1540 AC, 1540 MV errors in P frame
+frame= 3915 fps= 14 q=28.0 size=   67943kB time=00:04:44.96 bitrate=1953.2kbits/s dup=0 drop=2    frame= 3924 fps= 14 q=28.0 size=   68303kB time=00:04:45.36 bitrate=1960.8kbits/s dup=0 drop=2    frame= 3929 fps= 14 q=25.0 size=   68665kB time=00:04:45.76 bitrate=1968.4kbits/s dup=0 drop=2    frame= 3939 fps= 14 q=26.0 size=   69059kB time=00:04:46.20 bitrate=1976.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 4 packets
+[h264 @ 0xa95980] error while decoding MB 29 43, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 180 DC, 180 AC, 180 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 42 packets
+[h264 @ 0xa940c0] error while decoding MB 32 43, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 177 DC, 177 AC, 177 MV errors in P frame
+[h264 @ 0xa94900] error while decoding MB 54 17, bytestream -6
+[h264 @ 0xa94900] concealing 2235 DC, 2235 AC, 2235 MV errors in I frame
+frame= 3956 fps= 14 q=28.0 size=   69548kB time=00:04:46.88 bitrate=1986.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 60 packets
+frame= 3961 fps= 14 q=28.0 size=   69624kB time=00:04:47.08 bitrate=1986.8kbits/s dup=0 drop=2    frame= 3973 fps= 14 q=26.0 size=   69924kB time=00:04:47.64 bitrate=1991.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 29 packets
+[h264 @ 0xa95980] error while decoding MB 24 33, bytestream -34
+[h264 @ 0xa95980] concealing 985 DC, 985 AC, 985 MV errors in I frame
+frame= 3980 fps= 14 q=24.0 size=   70397kB time=00:04:48.32 bitrate=2000.2kbits/s dup=0 drop=2    frame= 3985 fps= 14 q=24.0 size=   70577kB time=00:04:48.52 bitrate=2003.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 15 packets
+[NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa940c0] left block unavailable for requested intra4x4 mode -1 at 0 10
+[h264 @ 0xa940c0] error while decoding MB 0 10, bytestream 14378
+[h264 @ 0xa940c0] concealing 2849 DC, 2849 AC, 2849 MV errors in I frame
+frame= 3994 fps= 14 q=25.0 size=   71248kB time=00:04:49.60 bitrate=2015.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[NULL @ 0x906ac0] RTP: missed 20 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra mode at 0 3
+[h264 @ 0xa92f80] error while decoding MB 0 3, bytestream 10732
+[h264 @ 0xa92f80] concealing 3409 DC, 3409 AC, 3409 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+frame= 4007 fps= 14 q=25.0 size=   71813kB time=00:04:50.52 bitrate=2025.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 26 packets
+[h264 @ 0xa95140] error while decoding MB 21 31, bytestream -44
+[h264 @ 0xa95140] concealing 1148 DC, 1148 AC, 1148 MV errors in I frame
+frame= 4014 fps= 14 q=24.0 size=   72576kB time=00:04:51.44 bitrate=2040.0kbits/s dup=0 drop=2    frame= 4025 fps= 14 q=22.0 size=   73156kB time=00:04:52.16 bitrate=2051.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 43 packets
+[h264 @ 0xa94900] error while decoding MB 37 19, bytestream -47
+[h264 @ 0xa94900] concealing 2092 DC, 2092 AC, 2092 MV errors in I frame
+frame= 4032 fps= 14 q=23.0 size=   73375kB time=00:04:52.44 bitrate=2055.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa940c0] error while decoding MB 67 19, bytestream -26
+[h264 @ 0xa940c0] concealing 2062 DC, 2062 AC, 2062 MV errors in I frame
+frame= 4041 fps= 14 q=27.0 size=   74032kB time=00:04:53.24 bitrate=2068.2kbits/s dup=0 drop=2    frame= 4042 fps= 14 q=27.0 size=   74073kB time=00:04:53.28 bitrate=2069.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[h264 @ 0xa95140] error while decoding MB 29 42, bytestream -7
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 260 DC, 260 AC, 260 MV errors in P frame
+frame= 4053 fps= 13 q=24.0 size=   74365kB time=00:04:53.72 bitrate=2074.1kbits/s dup=0 drop=2    frame= 4055 fps= 13 q=24.0 size=   74828kB time=00:04:54.24 bitrate=2083.3kbits/s dup=0 drop=2    frame= 4060 fps= 13 q=24.0 size=   75011kB time=00:04:54.44 bitrate=2087.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa95980] error while decoding MB 34 23, bytestream -15
+[h264 @ 0xa95980] concealing 1775 DC, 1775 AC, 1775 MV errors in I frame
+frame= 4074 fps= 13 q=25.0 size=   75488kB time=00:04:55.08 bitrate=2095.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 14 packets
+    Last message repeated 1 times
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[NULL @ 0x906ac0] RTP: missed 123 packets
+[NULL @ 0x906ac0] RTP: missed 100 packets
+frame= 4095 fps= 13 q=26.0 size=   75981kB time=00:04:55.92 bitrate=2103.4kbits/s dup=0 drop=2    [h264 @ 0xa92f80] error while decoding MB 76 18, bytestream -8
+[h264 @ 0xa92f80] concealing 2133 DC, 2133 AC, 2133 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 88 packets
+[NULL @ 0x906ac0] RTP: missed 100 packets
+[NULL @ 0x906ac0] RTP: missed 69 packets
+frame= 4110 fps= 13 q=26.0 size=   76300kB time=00:04:56.52 bitrate=2108.0kbits/s dup=0 drop=2    frame= 4112 fps= 13 q=26.0 size=   77480kB time=00:04:59.32 bitrate=2120.5kbits/s dup=0 drop=2    frame= 4113 fps= 13 q=26.0 size=   77501kB time=00:04:59.36 bitrate=2120.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 54 packets
+[h264 @ 0xa94900] error while decoding MB 3 42, bytestream -10
+[h264 @ 0xa94900] Cannot use next picture in error concealment
+[h264 @ 0xa94900] concealing 286 DC, 286 AC, 286 MV errors in P frame
+frame= 4123 fps= 13 q=25.0 size=   78122kB time=00:05:01.08 bitrate=2125.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[h264 @ 0xa92f80] error while decoding MB 33 32, bytestream -16
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 1056 DC, 1056 AC, 1056 MV errors in P frame
+frame= 4127 fps= 13 q=25.0 size=   78976kB time=00:05:04.04 bitrate=2127.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+[NULL @ 0x906ac0] RTP: missed 22 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa94900] left block unavailable for requested intra mode at 0 23
+[h264 @ 0xa94900] error while decoding MB 0 23, bytestream 1956
+[h264 @ 0xa94900] concealing 1809 DC, 1809 AC, 1809 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 14 packets
+[h264 @ 0xa95140] error while decoding MB 59 26, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 1510 DC, 1510 AC, 1510 MV errors in P frame
+frame= 4138 fps= 13 q=26.0 size=   79405kB time=00:05:05.16 bitrate=2131.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 77 packets
+[h264 @ 0xa95140] error while decoding MB 77 35, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 772 DC, 772 AC, 772 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 71 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 4 41, bytestream -14
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 365 DC, 365 AC, 365 MV errors in P frame
+frame= 4153 fps= 13 q=26.0 size=   79995kB time=00:05:06.20 bitrate=2140.2kbits/s dup=0 drop=2    frame= 4155 fps= 13 q=25.0 size=   80043kB time=00:05:06.28 bitrate=2140.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 67 packets
+[NULL @ 0x906ac0] RTP: missed 18 packets
+[NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 4173 fps= 13 q=25.0 size=   80264kB time=00:05:08.96 bitrate=2128.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 96 packets
+frame= 4189 fps= 13 q=26.0 size=   80525kB time=00:05:10.24 bitrate=2126.3kbits/s dup=0 drop=2    frame= 4202 fps= 13 q=26.0 size=   80643kB time=00:05:12.36 bitrate=2114.9kbits/s dup=0 drop=2    frame= 4215 fps= 13 q=28.0 size=   80643kB time=00:05:12.88 bitrate=2111.4kbits/s dup=0 drop=2    frame= 4228 fps= 13 q=28.0 size=   80643kB time=00:05:13.40 bitrate=2107.9kbits/s dup=0 drop=2    frame= 4236 fps= 13 q=28.0 size=   80643kB time=00:05:13.72 bitrate=2105.8kbits/s dup=0 drop=2    frame= 4243 fps= 13 q=28.0 size=   80643kB time=00:05:14.00 bitrate=2103.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 55 DC, 55 AC, 55 MV errors in P frame
+frame= 4255 fps= 14 q=28.0 size=   80782kB time=00:05:14.48 bitrate=2104.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 23 packets
+[h264 @ 0xa94900] error while decoding MB 8 43, bytestream -18
+[h264 @ 0xa94900] concealing 201 DC, 201 AC, 201 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 16 packets
+[h264 @ 0xa95980] error while decoding MB 21 41, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 348 DC, 348 AC, 348 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 9 packets
+[h264 @ 0xa940c0] error while decoding MB 36 43, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 173 DC, 173 AC, 173 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 43 packets
+frame= 4267 fps= 14 q=27.0 size=   80841kB time=00:05:14.96 bitrate=2102.7kbits/s dup=0 drop=2    [h264 @ 0xa94900] error while decoding MB 21 21, bytestream -36
+[h264 @ 0xa94900] concealing 1948 DC, 1948 AC, 1948 MV errors in I frame
+frame= 4276 fps= 14 q=28.0 size=   81153kB time=00:05:15.40 bitrate=2107.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 15 packets
+[h264 @ 0xa92f80] error while decoding MB 22 40, bytestream -26
+[h264 @ 0xa92f80] concealing 427 DC, 427 AC, 427 MV errors in I frame
+frame= 4290 fps= 14 q=24.0 size=   81614kB time=00:05:16.44 bitrate=2112.8kbits/s dup=0 drop=2    frame= 4299 fps= 14 q=26.0 size=   81916kB time=00:05:17.20 bitrate=2115.6kbits/s dup=0 drop=2    frame= 4315 fps= 14 q=28.0 size=   81916kB time=00:05:17.96 bitrate=2110.5kbits/s dup=0 drop=2    frame= 4325 fps= 14 q=28.0 size=   81949kB time=00:05:18.36 bitrate=2108.7kbits/s dup=0 drop=2    frame= 4335 fps= 14 q=28.0 size=   81949kB time=00:05:18.76 bitrate=2106.0kbits/s dup=0 drop=2    frame= 4345 fps= 14 q=28.0 size=   82137kB time=00:05:19.16 bitrate=2108.2kbits/s dup=0 drop=2    frame= 4356 fps= 14 q=28.0 size=   82363kB time=00:05:19.60 bitrate=2111.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa95140] error while decoding MB 36 44, bytestream -8
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 93 DC, 93 AC, 93 MV errors in P frame
+frame= 4372 fps= 14 q=28.0 size=   82454kB time=00:05:20.24 bitrate=2109.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 22 42, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 267 DC, 267 AC, 267 MV errors in P frame
+[h264 @ 0xa92f80] error while decoding MB 25 43, bytestream -12
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 184 DC, 184 AC, 184 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 44 packets
+[h264 @ 0xa95140] error while decoding MB 37 16, bytestream -6
+[h264 @ 0xa95140] concealing 2332 DC, 2332 AC, 2332 MV errors in I frame
+frame= 4386 fps= 14 q=28.0 size=   82609kB time=00:05:20.80 bitrate=2109.5kbits/s dup=0 drop=2    frame= 4399 fps= 14 q=25.0 size=   82844kB time=00:05:21.36 bitrate=2111.8kbits/s dup=0 drop=2    frame= 4416 fps= 14 q=24.0 size=   82879kB time=00:05:22.36 bitrate=2106.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa940c0] error while decoding MB 21 44, bytestream -10
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 108 DC, 108 AC, 108 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 5 packets
+[h264 @ 0xa92f80] error while decoding MB 22 44, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 107 DC, 107 AC, 107 MV errors in P frame
+frame= 4426 fps= 14 q=28.0 size=   83223kB time=00:05:22.76 bitrate=2112.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 39 41, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 330 DC, 330 AC, 330 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 35 34, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 894 DC, 894 AC, 894 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa92f80] error while decoding MB 30 37, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 659 DC, 659 AC, 659 MV errors in P frame
+frame= 4438 fps= 14 q=28.0 size=   83669kB time=00:05:23.24 bitrate=2120.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa92f80] error while decoding MB 23 41, bytestream -8
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 346 DC, 346 AC, 346 MV errors in P frame
+frame= 4442 fps= 14 q=28.0 size=   83818kB time=00:05:23.40 bitrate=2123.2kbits/s dup=0 drop=2    frame= 4453 fps= 14 q=28.0 size=   84302kB time=00:05:23.92 bitrate=2132.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 6 packets
+[NULL @ 0x906ac0] RTP: missed 66 packets
+frame= 4464 fps= 14 q=28.0 size=   84786kB time=00:05:24.44 bitrate=2140.8kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 30 packets
+[h264 @ 0xa92f80] error while decoding MB 17 38, bytestream -30
+[h264 @ 0xa92f80] concealing 592 DC, 592 AC, 592 MV errors in I frame
+frame= 4477 fps= 14 q=28.0 size=   85307kB time=00:05:25.00 bitrate=2150.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 51 packets
+[h264 @ 0xa95980] error while decoding MB 57 17, bytestream -18
+[h264 @ 0xa95980] concealing 2232 DC, 2232 AC, 2232 MV errors in I frame
+frame= 4490 fps= 14 q=28.0 size=   86008kB time=00:05:26.24 bitrate=2159.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 4494 fps= 14 q=28.0 size=   86127kB time=00:05:26.40 bitrate=2161.6kbits/s dup=0 drop=2    [h264 @ 0xa95980] error while decoding MB 26 41, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 343 DC, 343 AC, 343 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 10 packets
+frame= 4505 fps= 14 q=28.0 size=   86464kB time=00:05:27.28 bitrate=2164.2kbits/s dup=0 drop=2    [h264 @ 0xa92f80] error while decoding MB 13 43, bytestream -22
+[h264 @ 0xa92f80] concealing 196 DC, 196 AC, 196 MV errors in I frame
+frame= 4517 fps= 14 q=24.0 size=   87024kB time=00:05:28.12 bitrate=2172.7kbits/s dup=0 drop=2    frame= 4521 fps= 14 q=24.0 size=   87167kB time=00:05:28.28 bitrate=2175.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 119 packets
+[h264 @ 0xa95980] error while decoding MB 49 6, bytestream -14
+[h264 @ 0xa95980] concealing 3120 DC, 3120 AC, 3120 MV errors in I frame
+frame= 4532 fps= 14 q=28.0 size=   87791kB time=00:05:28.96 bitrate=2186.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95980] error while decoding MB 41 39, bytestream -8
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 488 DC, 488 AC, 488 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 134 packets
+frame= 4535 fps= 13 q=28.0 size=   87903kB time=00:05:29.08 bitrate=2188.2kbits/s dup=0 drop=2    frame= 4547 fps= 14 q=24.0 size=   88353kB time=00:05:29.56 bitrate=2196.2kbits/s dup=0 drop=2    frame= 4550 fps= 14 q=24.0 size=   88466kB time=00:05:29.68 bitrate=2198.2kbits/s dup=0 drop=2    frame= 4552 fps= 13 q=24.0 size=   89734kB time=00:05:31.04 bitrate=2220.6kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 110 packets
+[h264 @ 0xa95140] error while decoding MB 22 21, bytestream -56
+[h264 @ 0xa95140] concealing 1947 DC, 1947 AC, 1947 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 81 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+frame= 4563 fps= 13 q=23.0 size=   90633kB time=00:05:32.76 bitrate=2231.2kbits/s dup=0 drop=2    [h264 @ 0xa95140] error while decoding MB 44 44, bytestream -14
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 85 DC, 85 AC, 85 MV errors in P frame
+frame= 4566 fps= 13 q=24.0 size=   90746kB time=00:05:32.88 bitrate=2233.2kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 77 packets
+[h264 @ 0xa95980] error while decoding MB 29 33, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 980 DC, 980 AC, 980 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 59 packets
+frame= 4576 fps= 13 q=24.0 size=   91120kB time=00:05:33.28 bitrate=2239.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 1 packets
+[h264 @ 0xa95140] error while decoding MB 23 37, bytestream -6
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 666 DC, 666 AC, 666 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 6 packets
+frame= 4586 fps= 13 q=23.0 size=   92562kB time=00:05:35.00 bitrate=2263.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 49 packets
+[h264 @ 0xa95980] error while decoding MB 20 43, bytestream -6
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 189 DC, 189 AC, 189 MV errors in P frame
+frame= 4590 fps= 13 q=20.0 size=   93065kB time=00:05:36.08 bitrate=2268.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 151 packets
+frame= 4597 fps= 13 q=22.0 size=   93571kB time=00:05:37.20 bitrate=2273.2kbits/s dup=0 drop=2    frame= 4603 fps= 13 q=25.0 size=   94038kB time=00:05:37.92 bitrate=2279.7kbits/s dup=0 drop=2    frame= 4604 fps= 13 q=24.0 size=   94038kB time=00:05:37.96 bitrate=2279.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 132 packets
+[h264 @ 0xa94900] error while decoding MB 4 10, bytestream -10
+[h264 @ 0xa94900] concealing 2845 DC, 2845 AC, 2845 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 45 packets
+[NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa95980] Cannot use next picture in error concealment
+[h264 @ 0xa95980] concealing 92 DC, 92 AC, 92 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 24 packets
+[h264 @ 0xa940c0] error while decoding MB 30 42, bytestream -6
+[h264 @ 0xa940c0] Cannot use next picture in error concealment
+[h264 @ 0xa940c0] concealing 259 DC, 259 AC, 259 MV errors in P frame
+[NULL @ 0x906ac0] RTP: missed 15 packets
+[NULL @ 0x906ac0] RTP: missed 8 packets
+[h264 @ 0xa92f80] left block unavailable for requested intra mode at 0 20
+[h264 @ 0xa92f80] error while decoding MB 0 20, bytestream 6220
+[h264 @ 0xa92f80] concealing 2049 DC, 2049 AC, 2049 MV errors in I frame
+frame= 4617 fps= 13 q=25.0 size=   94377kB time=00:05:38.96 bitrate=2280.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 429 packets
+[h264 @ 0xa95140] error while decoding MB 74 36, bytestream -12
+[h264 @ 0xa95140] Cannot use next picture in error concealment
+[h264 @ 0xa95140] concealing 695 DC, 695 AC, 695 MV errors in P frame
+frame= 4620 fps= 13 q=25.0 size=   95076kB time=00:05:41.08 bitrate=2283.5kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 85 packets
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 77 packets
+[h264 @ 0xa92f80] error while decoding MB 40 34, bytestream -10
+[h264 @ 0xa92f80] Cannot use next picture in error concealment
+[h264 @ 0xa92f80] concealing 889 DC, 889 AC, 889 MV errors in P frame
+frame= 4632 fps= 13 q=19.0 size=   95252kB time=00:05:41.56 bitrate=2284.5kbits/s dup=0 drop=2    frame= 4637 fps= 13 q=23.0 size=   95736kB time=00:05:43.92 bitrate=2280.4kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 115 packets
+[NULL @ 0x906ac0] RTP: missed 227 packets
+[h264 @ 0xa95980] error while decoding MB 54 17, bytestream -8
+[h264 @ 0xa95980] concealing 2235 DC, 2235 AC, 2235 MV errors in I frame
+frame= 4646 fps= 13 q=23.0 size=   96565kB time=00:05:50.80 bitrate=2255.0kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 2 packets
+[NULL @ 0x906ac0] RTP: missed 35 packets
+[h264 @ 0xa95980] error while decoding MB 7 22, bytestream -24
+[h264 @ 0xa95980] concealing 1882 DC, 1882 AC, 1882 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 36 packets
+frame= 4659 fps= 13 q=27.0 size=   96998kB time=00:05:53.40 bitrate=2248.5kbits/s dup=0 drop=2    frame= 4668 fps= 13 q=23.0 size=   97171kB time=00:05:55.48 bitrate=2239.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 258 packets
+[h264 @ 0xa940c0] error while decoding MB 20 25, bytestream -24
+[h264 @ 0xa940c0] concealing 1629 DC, 1629 AC, 1629 MV errors in I frame
+frame= 4682 fps= 13 q=24.0 size=   97171kB time=00:05:58.88 bitrate=2218.1kbits/s dup=0 drop=2    frame= 4695 fps= 13 q=25.0 size=   97171kB time=00:06:00.08 bitrate=2210.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 10 packets
+[h264 @ 0xa95980] error while decoding MB 17 39, bytestream -11
+[h264 @ 0xa95980] concealing 512 DC, 512 AC, 512 MV errors in I frame
+frame= 4708 fps= 13 q=25.0 size=   97723kB time=00:06:03.68 bitrate=2201.2kbits/s dup=0 drop=2    frame= 4722 fps= 13 q=25.0 size=   97723kB time=00:06:04.24 bitrate=2197.9kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 7 packets
+[h264 @ 0xa940c0] left block unavailable for requested intra mode at 0 28
+[h264 @ 0xa940c0] error while decoding MB 0 28, bytestream 13782
+[h264 @ 0xa940c0] concealing 1409 DC, 1409 AC, 1409 MV errors in I frame
+frame= 4731 fps= 13 q=26.0 size=   97723kB time=00:06:04.72 bitrate=2195.0kbits/s dup=0 drop=2    frame= 4743 fps= 13 q=27.0 size=   97723kB time=00:06:05.20 bitrate=2192.1kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 9 packets
+[NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 3 packets
+[h264 @ 0xa940c0] concealing 1389 DC, 1389 AC, 1389 MV errors in I frame
+frame= 4754 fps= 13 q=27.0 size=   97844kB time=00:06:05.64 bitrate=2192.2kbits/s dup=0 drop=2    frame= 4766 fps= 13 q=27.0 size=   97844kB time=00:06:06.12 bitrate=2189.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 24 packets
+[h264 @ 0xa940c0] error while decoding MB 19 26, bytestream -22
+[h264 @ 0xa940c0] concealing 1550 DC, 1550 AC, 1550 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 4 packets
+    Last message repeated 1 times
+frame= 4779 fps= 13 q=27.0 size=   97844kB time=00:06:06.72 bitrate=2185.7kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 17 packets
+[h264 @ 0xa940c0] error while decoding MB 34 30, bytestream -40
+[h264 @ 0xa940c0] concealing 1215 DC, 1215 AC, 1215 MV errors in I frame
+frame= 4786 fps= 13 q=27.0 size=   97844kB time=00:06:07.12 bitrate=2183.3kbits/s dup=0 drop=2    [NULL @ 0x906ac0] RTP: missed 13 packets
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 31 packets
+frame= 4801 fps= 13 q=25.0 size=   97844kB time=00:06:07.96 bitrate=2178.3kbits/s dup=0 drop=2    [h264 @ 0xa940c0] error while decoding MB 58 35, bytestream -8
+[h264 @ 0xa940c0] concealing 791 DC, 791 AC, 791 MV errors in I frame
+[NULL @ 0x906ac0] RTP: missed 1 packets
+[NULL @ 0x906ac0] RTP: missed 48 packets
+[h264 @ 0xa940c0] left block unavailable for requested intra4x4 mode -1 at 0 42
+[h264 @ 0xa940c0] error while decoding MB 0 42, bytestream 902
+[h264 @ 0xa940c0] concealing 289 DC, 289 AC, 289 MV errors in I frame
+WriteN, RTMP send error 104 (136 bytes)

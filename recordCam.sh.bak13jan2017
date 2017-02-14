@@ -1,0 +1,64 @@
+#!/bin/bash
+# recordCam.sh ------------ This script saves the live video from the 
+#Foscam IP camera to a full-quality mp4 file. I chose to split the files 
+#every 5 minutes (300 seconds), to quickly find the time I need. Note: 
+#audio is not saved as my cameras don't have a microphone connected to 
+#them. killall -INT ffmpeg
+# The file name. I use the date to make finding files easier.
+source=$3 
+aggregator=$1 
+camera=$2
+aggregatorIP=$4
+file="/etc/init.d/$camera.sh"
+if [ -f "$file" ]
+then
+	echo "found" >>/logsfile
+else
+cat <<?>> /etc/init.d/$camera.sh
+nohup sh /home/Aggregator/recordCam.sh $aggregator $camera $source > /dev/null 2>&1 &
+?
+sudo chmod 777 /etc/init.d/$camera.sh
+sudo update-rc.d $camera.sh defaults
+fi
+sudo mkdir "/home/Videos/"$aggregator"/"
+sudo mkdir "/home/Videos/"$aggregator"/"$camera 
+sudo mkdir "/home/Images/"$aggregator"/"
+sudo mkdir "/home/Images/"$aggregator"/"$camera
+sudo chmod -R 777 /home 
+while true 
+do 
+name="`date +%Y%m%d%H%M`" 
+name1="`date +%Y-%m-%d_%H:%M`"
+end=$name
+# Where the videos will be saved
+BASEpath='/home/Videos' AggregatorId='/'$aggregator CameraId='/'$camera 
+RECpath=$BASEpath$AggregatorId$CameraId IMGBASEpath='/home/Images' 
+IMGRECpath=$IMGBASEpath$AggregatorId$CameraId 
+mediaUrl="http://192.168.0.15/Videos"$AggregatorId$CameraId"/"$name.mp4 
+ThumbnailUrl="http://192.168.0.15/Images"$AggregatorId$CameraId"/"$name.png
+## Save the streams using ffmpeg at 20 fps, stopping the capture after 
+## 300 seconds (5 minutes). Add more lines if you have more than 2 
+## cameras
+ffmpeg -i $source -r 20 -acodec copy -vcodec copy -an -t 300 $RECpath/$name.mp4 </dev/null >/dev/null 2>/tmp/cam01.log & 
+ffmpeg -i $source -vframes 1 $IMGRECpath/$name.png </dev/null >/dev/null 2>/tmp/cam02.log &
+#
+End=$name1
+Start=$name1
+sleep 310;
+#aggregator=$1
+#camera=$2
+#End=$3
+#Start=$4
+#mediaUrl=$5
+#ThumbnailUrl=$6
+ curl -X POST -i -H "Content-type: application/json" -X POST http://587cc77d6b364ffa82c5e1c7ae45cfef.cloudapp.net/api/CameraVideoOnDemand/AddVideoOnDemand -d '
+    {
+                "AgreegatorId":"'"$aggregator"'",
+        "CameraId":"'"$camera"'",
+        "end_date":"'"$End"'",
+        "start_date":"'"$Start"'",
+       "text":"'"$mediaUrl"'" ,
+       "media":"'"$ThumbnailUrl"'"
+    }
+    ' 
+done

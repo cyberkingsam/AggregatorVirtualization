@@ -1,0 +1,17 @@
+{
+  "reciever": "//dev//ttyACM0",
+  "baudrate": 4800,
+  "port": 8080,
+  "bootupStarterPort": 8090,
+  "AgreegatorId": "5cc1bd2a-b548-4da7-a5db-b996460c6f82",
+  "AgreegatorType": "258a3f2c-fa5d-4ce3-a1be-b69e6057f8a0",
+  "HostName": "8edd9ae4f6214bab91d2d65c64b23d05.cloudapp.net",
+  "HttpsAPIRequest": false,
+  "HostPort": "80",
+  "GettingAgreegatorIdEndpoint": "",
+  "APIforSendDataEndpoint": "/api/AgreegatorController/AddAgreegatorGpsData",
+  "SSID": "",
+  "Password": "",
+  "AgreegatorIdFilePath": "/APIConfig.json",
+  "WifiConfigPath": "/etc/wpa_supplicant/wpa_supplicant.conf"
+}
